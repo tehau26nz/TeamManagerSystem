@@ -1,0 +1,259 @@
+Arsenal
+Mikel Arteta
+16
+GK Aaron Ramsdale
+188
+England
+CB Benjamin White
+182
+England
+CB Gabriel Magalhães
+190
+Brazil
+CB,RB Takehiro Tomiyasu
+188
+Japan
+LB Nuno Tavares
+183
+Portugal
+M Thomas Partey
+185
+Ghana
+LW Bukayo Saka
+178
+England
+AM Emile Smith Rowe
+182
+England
+M Albert Sambi Lokonga
+173
+Belgium
+CF Alexandre Lacazette
+175
+France
+CF Pierre-Emerick Aubameyang
+187
+Gabon
+CB Rob Holding
+189
+England
+Chelsea
+Thomas Tuchel
+20
+GK Édouard Mendy
+197
+Senegal
+CB Antonio Rüdiger
+190
+Germany
+CB Andreas Christensen
+187
+Denmark
+CB Thiago Silva
+183
+Brazil
+M,CDM Jorginho
+180
+ItalyM,CDM N'Golo Kanté
+168
+LB Ben Chilwell
+178
+England
+RB Reece James
+182
+England
+W Callum Hudson-Odoi
+182
+England
+M,AM,W Hakim Ziyech
+180
+Morocco
+M,AM Kai Havertz
+188
+Germany
+LB,WB Marcos Alonso
+188
+Spain
+RB,CB César Azpilicueta
+178
+Spain
+M,CDM Saúl Ñíguez
+184
+Spain
+M,CM,CAM Mason Mount
+178
+England
+W,AM Christian Pulisic
+172
+United States
+CF Timo Werner
+180
+Germany
+M Mateo Kovacic
+178
+Croatia
+CF Romelu Lukaku
+190
+Belgium
+Manchester City
+Josep Guardiola
+12
+GK Ederson
+188
+Brazil
+RB Kyle Walker
+178
+England
+CB Rúben Dias
+186
+Portugal
+CB Aymeric Laporte
+191
+Spain
+LB,RB,RW João Cancelo
+182
+Portugal
+M,DM Rodri
+191
+Spain
+M Kevin De Bruyne
+181
+Belgium
+W,AM Bernardo Silva
+173
+Portugal
+F Gabriel Jesus
+175
+Brazil
+W,AM,F Jack Grealish
+175
+England
+M,F Phil Foden
+171
+England
+W,AM Raheem Sterling
+170
+England
+Liverpool
+Jürgen Klopp
+12
+GK Alisson
+191
+Brazil
+CB Virgil van Dijk
+193
+Netherlands
+CB Ibrahima Konaté
+194
+France
+LB Andrew Robertson
+178
+Scotland
+RB Trent Alexander-Arnold
+175
+England
+CM Naby Keïta
+172
+Guinea
+M Jordan Henderson
+182
+England
+M Curtis Jones
+185
+England
+F,AM Roberto Firmino
+181
+Brazil
+W Sadio Mané
+175
+Senegal
+F Mohamed Salah
+175
+Egypt
+F,AM,W Takumi Minamino
+174
+Japan
+Tottenham Hotspur
+Nuno Espírito Santo
+12
+GK Hugo Lloris
+188
+France
+CB Cristian Romero
+185
+Argentina
+RB Emerson Royal
+181
+Brazil
+DM,CB,RB Eric Dier
+188
+England
+CB,LB Ben Davies
+181
+Wales
+M Pierre-Emile Højbjerg
+187
+Denmark
+F,AM Son Heung-Min
+183
+South Korea
+CM Giovani Lo Celso
+177
+Argentina
+W,F Lucas Moura
+172
+Brazil
+CM Oliver Skipp
+175
+England
+F Harry Kane
+188
+England
+M Dele Alli
+188
+England
+Manchester United
+Ole Gunnar Solskjær
+14
+GK David de Gea
+192
+Spain
+CB,RB Victor Lindelöf
+187
+Sweden
+CB Harry Maguire
+194
+England
+CB Raphaël Varane
+191
+France
+M Fred
+169
+Brazil
+M Bruno Fernandes
+179
+Portugal
+LB Luke Shaw
+185
+England
+RB Aaron Wan-Bissaka
+183
+England
+CM Scott McTominay
+193
+Scotland
+F Cristiano Ronaldo
+187
+Portugal
+F Edinson Cavani
+184
+Uruguay
+AM,W Jesse Lingard
+175
+England
+F Mason Greenwood
+181
+England
+W Jadon Sancho
+180
+England

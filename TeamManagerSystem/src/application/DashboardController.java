@@ -36,7 +36,7 @@ public class DashboardController implements Initializable {
 	
 	private void loadStages(String fxml) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource(fxml));
+			Parent root = FXMLLoader.load(getClass().getResource("Teams.fxml"));
 			Stage stage = new Stage();
 			Image icon = new Image("football_color_icon.png");
 			stage.getIcons().add(icon);
