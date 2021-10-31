@@ -16,7 +16,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Image icon = new Image("football_color_icon.png");
-			stage.getIcons().add(icon);
+//			stage.getIcons().add(icon);
 			stage.setScene(scene);
 			stage.show();
 		} catch(Exception e) {
