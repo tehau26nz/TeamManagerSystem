@@ -4,12 +4,15 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 
 public class EventsController implements Initializable {
@@ -18,6 +21,12 @@ public class EventsController implements Initializable {
 	@FXML private TableColumn<TeamEvent,String> eventNameCol;
 	@FXML private TableColumn<TeamEvent,String> eventLocationCol;
 	@FXML private TableColumn<TeamEvent,String> eventDateCol;
+	
+	@FXML private TextField addEventName;
+	@FXML private TextField addEventLocation;
+	@FXML private TextField addEventDate;
+	@FXML private Button btnAddEvent;
+	@FXML private Button btnDeleteEvent;
 	
 	private ObservableList<TeamEvent> events = FXCollections.observableArrayList();
 	
@@ -33,7 +42,25 @@ public class EventsController implements Initializable {
 		events.add(new TeamEvent("Pheonix vs Tiger","Wellington","2021-12-09"));
 	}
 	
+	/**
+	 * Allow users to add events
+	 * @param e
+	 */
+	@FXML public void handleButtonAction(Event e) {
+			events.add(new TeamEvent(addEventName.getText(),addEventLocation.getText(),addEventDate.getText()));
+			
+			addEventName.clear();
+			addEventLocation.clear();
+			addEventDate.clear();
+	}
 	
+	/**
+	 * Allow users to delete the selected event
+	 * @param e
+	 */
+	@FXML public void deleteRowFromTableViewAction(Event e) {
+		tableView.getItems().removeAll(tableView.getSelectionModel().getSelectedItems());
+	}
 	
 	
 	public static class TeamEvent {
