@@ -21,7 +21,6 @@
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="380.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="logoImage" fitHeight="150.0" fitWidth="146.0" layoutX="407.0" layoutY="195.0">
                <image>
                   <Image url="@../football_color_icon.png" />

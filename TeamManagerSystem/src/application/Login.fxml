@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
       <Pane prefHeight="640.0" prefWidth="960.0">
          <children>
-            <Button fx:id="skipBtn" layoutX="380.0" layoutY="513.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Login" />
+            <Button fx:id="loginBtn" layoutX="380.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="50.0" prefWidth="200.0" text="Login" />
             <ImageView fx:id="logoImage" fitHeight="100.0" fitWidth="96.0" layoutX="432.0" layoutY="153.0">
                <image>
                   <Image url="@../football_color_icon.png" />
@@ -27,7 +27,7 @@
                   <Font name="Gill Sans MT" size="24.0" />
                </font>
             </Label>
-            <TextField alignment="CENTER" layoutX="330.0" layoutY="295.0" prefHeight="50.0" prefWidth="300.0" promptText="Username">
+            <TextField fx:id="usernameInput" alignment="CENTER" layoutX="330.0" layoutY="295.0" prefHeight="50.0" prefWidth="300.0" promptText="Username">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -35,7 +35,7 @@
                   <Glow />
                </effect>
             </TextField>
-            <PasswordField alignment="CENTER" layoutX="330.0" layoutY="388.0" prefHeight="50.0" prefWidth="300.0" promptText="Password" />
+            <PasswordField fx:id="passwordInput" alignment="CENTER" layoutX="330.0" layoutY="388.0" prefHeight="50.0" prefWidth="300.0" promptText="Password" />
          </children>
       </Pane>
    </children>
