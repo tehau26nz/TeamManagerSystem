@@ -13,16 +13,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-
-public class DashboardController implements Initializable {
-@FXML Button btnEvents;
+public class LoginSelectionController implements Initializable {
+@FXML Button btnConfirm;
 	
-	public void handleButtonClicks(Event mouseEvent) {
-		if(mouseEvent.getSource() == btnEvents) {
-			loadStages("UI_Events.fxml");
+	
+	public void handleConfirmButtonClick(Event mouseEvent) {
+		if(mouseEvent.getSource() == btnConfirm) {
+			loadStages("UI_Dashboard.fxml");
 		}
 	}
-
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
