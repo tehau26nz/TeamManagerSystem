@@ -1,6 +1,6 @@
 Arsenal
 Mikel Arteta
-16
+12
 GK Aaron Ramsdale
 188
 England
@@ -39,7 +39,7 @@ CB Rob Holding
 England
 Chelsea
 Thomas Tuchel
-20
+19
 GK Édouard Mendy
 197
 Senegal
@@ -54,8 +54,10 @@ CB Thiago Silva
 Brazil
 M,CDM Jorginho
 180
-ItalyM,CDM N'Golo Kanté
+Italy
+M,CDM N'Golo Kanté
 168
+France
 LB Ben Chilwell
 178
 England
