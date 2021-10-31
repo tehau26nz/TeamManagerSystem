@@ -10,15 +10,15 @@ import javafx.scene.image.Image;
 
 public class Main extends Application {
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage stage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("UI_Intro.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Image icon = new Image("football_color_icon.png");
-			primaryStage.getIcons().add(icon);
-			primaryStage.setScene(scene);
-			primaryStage.show();
+			stage.getIcons().add(icon);
+			stage.setScene(scene);
+			stage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
