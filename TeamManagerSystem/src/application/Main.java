@@ -15,7 +15,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-//			Image icon = new Image("football_color_icon.png");
+			Image icon = new Image("football_color_icon.png");
 //			stage.getIcons().add(icon);
 			stage.setScene(scene);
 			stage.show();
