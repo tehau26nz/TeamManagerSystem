@@ -19,6 +19,7 @@ public class Player {
 		}
 	}
 	
+	//Method to get player name
 	public String getName() {
 		return name;
 	}
