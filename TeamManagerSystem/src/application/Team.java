@@ -18,6 +18,7 @@ public class Team {
 		return new ArrayList<Player>(teamPlayers);
 	}
 
+	//Set team players
 	public void setTeamPlayers(ArrayList<Player> teamPlayers) {
 		this.teamPlayers = teamPlayers;
 	}
