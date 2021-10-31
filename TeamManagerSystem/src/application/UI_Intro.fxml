@@ -8,11 +8,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IntroController">
    <children>
       <AnchorPane prefHeight="640.0" prefWidth="960.0">
          <children>
-            <Button layoutX="439.0" layoutY="452.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="145.0" text="Skip the Intro" textAlignment="CENTER">
+            <Button fx:id="btnSkiptheIntro" layoutX="439.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#handleSkiptheIntroButtonClick" prefHeight="53.0" prefWidth="145.0" text="Skip the Intro" textAlignment="CENTER">
                <font>
                   <Font name="Gill Sans MT" size="14.0" />
                </font>
