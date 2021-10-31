@@ -26,6 +26,7 @@ public class DashboardController implements Initializable {
 			loadStages("Teams.fxml");
 		}
 	}
+	
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
