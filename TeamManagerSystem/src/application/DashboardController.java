@@ -11,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -33,6 +34,8 @@ public class DashboardController implements Initializable {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource(fxml));
 			Stage stage = new Stage();
+			Image icon = new Image("football_color_icon.png");
+			stage.getIcons().add(icon);
 			stage.setScene(new Scene(root));
 			stage.show();
 			
