@@ -17,10 +17,13 @@ import javafx.stage.Stage;
 
 public class DashboardController implements Initializable {
 @FXML Button btnEvents;
+@FXML Button btnteams;
 	
 	public void handleButtonClicks(Event mouseEvent) {
 		if(mouseEvent.getSource() == btnEvents) {
 			loadStages("UI_Events.fxml");
+		}else if(mouseEvent.getSource() == btnteams){
+			loadStages("Teams.fxml");
 		}
 	}
 

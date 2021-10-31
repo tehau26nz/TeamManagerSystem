@@ -1,0 +1,387 @@
+Thunderbirds
+Kristy Keppich-Birrell
+12
+WA,C Emily Beaton
+180
+Loxton, SA
+GA,WA,GS Erin Bell
+178
+Sydney, NSW
+GA,GS Stephanie Puopolo
+181
+Melbourne, Victoria
+GK,GD Samantha Poolman
+189
+Newcastle, NSW
+C,WA MadeleineÂ Proud
+174
+Adelaide, SA
+GK,GD Kate Shimmin
+186
+Adelaide, SA
+WA,C,WD Khao Watts
+170
+Millicent, South Australia
+GD,GK,WD Amy Steel
+190
+Melbourne, VIC
+GA,GS Carla Borrego
+193
+Jamaica
+C,WA Hannah Petty
+177
+Adelaide, South Australia
+GK,GD Sarah Klau
+190
+null
+WD,C,WA Jade Clarke
+174
+Manchester, England
+Pulse
+Tanya Dearns
+12
+GD,GK Katrina Grant
+186
+Papakura, NZ
+GA,GS Jodi Brown
+185
+Whanganui, NZ
+GS,GA Ameliaranne Wells
+186
+Bundaberg, QLD
+GK,GD,GS Phoenix Karaka
+186
+Auckland, New Zealand
+WD,C Elias Scheres
+178
+Tokoroa, NZ
+WA,C,GA Whitney Souness
+174
+Porirua, NZ
+GA,GS Blaze Leslie
+180
+Karratha, Western Australia
+GK,GD Jacinta Messer
+184
+Brisbane, Queensland
+C,WD Samon Nathan
+178
+Waitakere, New Zealand
+WA,C,GA Chelsea Locke
+181
+Paddington, New South Wales
+WD Kate Wells
+176
+Stratford, New Zealand
+GS Maia Wilson
+189
+Auckland, New Zealand
+Tactix
+Sue Hawkins
+12
+GA,WA,GS Anna Thompson
+175
+Christchurch, NZ
+WA,GS,GA Bailey Mes
+187
+Auckland, NZ
+GA,WA,C Gemma Hazeldine
+170
+Christchurch, NZ
+GS,GA Mwai Kumwenda
+183
+Mzimba, MAW
+WA,C Nicola Mackle
+169
+Timaru, New Zealand
+GK,GD Jess Moulds
+188
+Helensville, NZ
+WD,C,WA Erikana Pedersen
+173
+Auckland, NZ
+WD,C  Hayley Saunders
+179
+Gore, NZ
+GK,GD,WD Louise Thayer
+185
+Invercargill, NZ
+GK,GD,WD Zoe Walker
+183
+Nelson, NZ
+WD,C Charlotte Elley
+174
+Westport, New Zealand
+GK Olivia Coughlan
+188
+Palmerston North
+Vixens
+Simone McKinnis
+11
+GA,GS Alice Teague-Neeld
+183
+Bundoora, VIC
+GS,GA Karyn Bailey
+193
+Williamstown, VIC
+GK,GD Emily Mannix
+187
+Geelong, VIC
+GK,GD,WD Geva Mentor
+188
+Bournemouth, ENG
+WD,C Kate Moloney
+177
+Greensborough, VIC
+WA,C Madison Robinson
+168
+Geelong, Victoria
+GD,WD Chloe Watson
+183
+Fitzroy, VIC
+C,WA Elizabeth Watson 
+178
+Carlton, VIC
+GD,GK,WD Joanna Weston 
+188
+Corowa, VIC
+WA Kelsey Browne
+164
+Geelong, VIC
+GS,GA Emma Ryde
+197
+Dandenong, Victoria
+Swifts
+Rob Wright
+12
+C,WA Kimberlee Green
+176
+Sydney, New South Wales
+C,WA,WD Paige Hadley
+173
+Sydney, New South Wales
+GK,GD,WD Sharni Layton
+187
+Melbourne, Victoria
+WD,C Abbey McCulloch
+178
+Sydney, NSW
+GA,GS Susan Pettitt
+180
+Canberra, ACT
+GS Caitlin Thwaites
+188
+Bendigo, VIC
+GA,GS,WA Stephanie Wood
+175
+Hyde Park, Queensland
+C,WD,WA Laura Langman
+173
+Waikato, New Zealand
+WA,C Kaitlyn Bryce
+170
+Nowra, New South Wales
+GD Lauren Moore
+184
+Sydney, New South Wales
+GS Amy Sommerville
+180
+Sydney, New South Wales
+GD Maddy Turner
+183
+Adelaide, South Australia
+Mystics
+Debbie Fuller
+12
+GD,WD,C,WA Kayla Cullen
+185
+Auckland, New Zealand
+GD,GK Temalisi Fakahokotau
+182
+Auckland, New Zealand
+C,WD Serena Guthrie
+180
+Jersey, United Kingdom
+GS,GA Cathrine Tuivaiti
+189
+Auckland, New Zealand
+WD,C Nadia Loveday
+171
+Auckland, New Zealand
+GK,GD Sulu Fitzpatrick
+188
+Auckland, New Zealand
+GA,GS Maria Tutaia
+188
+Tokoroa, New Zealand
+GS Megan Craig
+203
+Lower Hutt, New Zealand
+GD,GK Holly Fowler
+182
+Auckland, New Zealand
+GK,GD,WD Anna Harrison
+190
+Westport, New Zealand
+GD,WD Michaela Sokolich-Beatson
+183
+Auckland, New Zealand
+C,WD Fa'amu Ioane
+172
+Apia, Samoa
+Firebirds
+Roselee Jencke
+12
+GS Romelda Aiken
+196
+Jamaica
+GK,GD Laura Clemesha
+190
+Toowoomba, Queensland
+GS,GA Beryl Friday
+184
+Ingham, Queensland
+GK,GD Laura Geitz
+185
+Ipswich, Queensland
+GD,WD Clare McMeniman
+185
+Brisbane, Queensland
+WA,C,WD Caitlyn Nevins
+173
+Echuca, Victoria
+C,WD,WA Kimberley Ravaillion
+176
+Strathfield, New South Wales
+WD,C,GD Gabrielle Simpson
+176
+Sydney, New South Wales
+GA,GS Gretel Tippett
+192
+Gold Coast, Queensland
+C,WA Mahalia Cassidy
+173
+Redcliffe, Queensland
+GD,WD Hulita Haukinima
+178
+Logan, Queensland
+GA,GS,WA Chelsea Lemke
+182
+Gawler, South Australia
+Steel
+Noeline Taurua
+12
+GK,GD Te Huinga Reo Selby-Rickit
+184
+Hamilton, NZ
+WA,C Gina Crampton
+174
+Hamilton, New Zealand
+GS Jhaniele Fowler-Reid
+198
+Montego Bay, Jamaica
+C,WA Shannon Francois
+178
+Motueka, New Zealand
+WD,C,WA Wendy Frew
+174
+Invercargill, New Zealand
+GA,GS Brooke Leaver
+183
+Auckland, New Zealand
+WD,C Stacey Peeters
+173
+Matamata, New Zealand
+GD,GK Storm Purvis
+186
+Christchurch, New Zealand
+GS,GA Te Paea Selby-Rickit
+188
+Otaki, New Zealand
+GK,GD,WD Jane Watson
+181
+Christchurch, New Zealand
+GK,GD Abby Erwood
+181
+Dunedin, New Zealand
+GA,GS Jamie Hume
+182
+Clyde, New Zealand
+Magic
+Julie Fitzgerald
+12
+GD,GK Leana de Bruin
+190
+Bethlehem, South Africa
+GS,GA Ellen Halpenny
+185
+Napier, New Zealand
+GS,GA Joanne Harten
+188
+Essex, ENG
+GD,GK Kelly Jury
+192
+Stratford, New Zealand
+GD,GK Kristiana Manu'a
+182
+Wellington, New Zealand
+GS,GA Malia Paseka
+183
+Auckland, New Zealand
+GD,WD Jamie-Lee Price
+179
+Sydney, New South Wales
+GA,WA Grace Rasmussen
+177
+Auckland, New Zealand
+C,WA,WD Samantha Sinclair
+171
+Rotorua, New Zealand
+C,WA  Courtney Tairi
+180
+Sydney, New South Wales
+WD,GD Katherine Coffin
+182
+Hamilton, New Zealand
+GA,GS Paula Griffin
+1
+Auckland, New Zealand
+Fever
+Stacey Rosman
+12
+WA,C Verity Simmons
+170
+Liverpool, New South Wales
+GS Cailtin Bassett
+193
+Perth, Western Australia
+GS,GA Kate Beveridge
+193
+Perth, Western Australia
+C,WD Ashleigh Brazill
+175
+Campbelltown, NSW
+C,WA,WD Shae Brown
+181
+Melbourne, Victoria
+GD,GK Courtney Bruce
+189
+Gosnells, Western Australia
+C,WA Ingrid Colyer
+165
+Karridale, Western Australia
+GD,GK Josie Janz-Dawson
+185
+Thursday Island, Queensland
+GK,GD April Brandley
+185
+Nowra, New South Wales
+GA,GS Natalie Medhurst
+175
+Warracknabeal, Victoria
+GK,GD Erena Mikaere
+193
+Rotorua, New Zealand
+GS,GA Kaylia Stanton
+189
+Perth, Western Australia
