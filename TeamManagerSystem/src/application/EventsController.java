@@ -61,6 +61,21 @@ public class EventsController implements Initializable {
 		events.add(new TeamEvent("Pheonix vs Tiger", "Wellington", "2021-11-09"));
 		events.add(new TeamEvent("Pheonix vs Tiger", "Wellington", "2021-11-21"));
 		events.add(new TeamEvent("Pheonix vs Tiger", "Wellington", "2021-12-09"));
+		
+		//League manager only allows to view teams
+		if(LoginSelectionController.managerAccessLevel.equals("teamManager")) {
+			btnAddEvent.setVisible(false);
+			btnDeleteEvent.setVisible(false);
+			addEventName.setVisible(false);
+			addEventLocation.setVisible(false);
+			addEventDate.setVisible(false);
+		}else {
+			btnAddEvent.setVisible(true);
+			btnDeleteEvent.setVisible(true);
+			addEventName.setVisible(true);
+			addEventLocation.setVisible(true);
+			addEventDate.setVisible(true);
+		}
 	}
 
 	/**

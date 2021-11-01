@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginSelectionController">
    <children>
       <Pane prefHeight="640.0" prefWidth="960.0">
          <children>
@@ -22,12 +22,12 @@
                   <Font name="Gill Sans MT" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="teamManagerBtn" alignment="CENTER" layoutX="252.0" layoutY="343.0" mnemonicParsing="false" onAction="#switchToTeamManagerLogin" prefHeight="50.0" prefWidth="200.0" text="Team Manager">
+            <Button fx:id="teamManagerBtn" alignment="CENTER" layoutX="252.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#loginSelectionHandleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Team Manager">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="leagueManagerBtn" alignment="CENTER" layoutX="480.0" layoutY="343.0" mnemonicParsing="false" onAction="#switchToLeagueManagerLogin" prefHeight="50.0" prefWidth="200.0" text="League Manager">
+            <Button fx:id="leagueManagerBtn" alignment="CENTER" layoutX="480.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#loginSelectionHandleButtonAction" prefHeight="50.0" prefWidth="200.0" text="League Manager">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font>

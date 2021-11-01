@@ -49,6 +49,22 @@ public class PlayersController  implements Initializable {
 		Team team = new DataHelper().getTeams().get(2);
 		players.addAll(team.getTeamPlayers());
 		playerTableView.setItems(players);
+		//League manager only allows to view players
+		if(LoginSelectionController.managerAccessLevel.equals("leagueManager")) {
+			btnAddPlayer.setVisible(false);
+			btnDeletePlayer.setVisible(false);
+			addPlayerName.setVisible(false);
+			addPlayerBirthplace.setVisible(false);
+			addPlayerHeight.setVisible(false);
+			addPlayerAllPositions.setVisible(false);
+		}else {
+			btnAddPlayer.setVisible(true);
+			btnDeletePlayer.setVisible(true);
+			addPlayerName.setVisible(true);
+			addPlayerBirthplace.setVisible(true);
+			addPlayerHeight.setVisible(true);
+			addPlayerAllPositions.setVisible(true);
+		}
 	}
 	
 	@FXML public void handleButtonAction(Event e) {

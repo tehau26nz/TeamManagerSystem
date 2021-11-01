@@ -18,7 +18,7 @@
            <top>
               <Pane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #0398E5;" BorderPane.alignment="CENTER">
                  <children>
-                    <Text fill="#eedddd" layoutX="83.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Footy Team Management System">
+                    <Text fill="#eedddd" layoutX="83.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Footy Team Management System - League Manager">
                        <font>
                           <Font size="24.0" />
                        </font>

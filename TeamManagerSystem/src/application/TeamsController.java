@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -35,6 +36,9 @@ public class TeamsController implements Initializable {
 	private Scene scene;
 	private Parent root;
 	
+	@FXML private Button btnAddTeam;
+	@FXML private Button btnDeleteTeam;
+	
 	private ObservableList<Team> footyTeams = FXCollections.observableArrayList();
 	
 	@Override
@@ -49,6 +53,19 @@ public class TeamsController implements Initializable {
 		}
 		
 		teamTableView.setItems(footyTeams);
+		
+		//Team manager only allows to view teams
+		if(LoginSelectionController.managerAccessLevel.equals("teamManager")) {
+			btnAddTeam.setVisible(false);
+			btnDeleteTeam.setVisible(false);
+			addTeamName.setVisible(false);
+			addTeamCoach.setVisible(false);
+		}else {
+			btnAddTeam.setVisible(true);
+			btnDeleteTeam.setVisible(true);
+			addTeamName.setVisible(true);
+			addTeamCoach.setVisible(true);
+		}
 	}
 	@FXML
 	public void switchToPrevious(Event e) throws IOException {

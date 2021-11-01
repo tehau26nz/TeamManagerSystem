@@ -9,10 +9,19 @@ import java.util.Scanner;
 import models.Player;
 import models.Team;
 
+
 //nz.ac.wgtn.teammanager.ui
 //nz.ac.wgtn.teammanager.models
 //nz.ac.wgtn.teammanager.controllers
 //nz.ac.wgtn.teammanager.tests
+
+/**
+ * This class is designed to work with data.
+ * Currently it is only used to load data from text file.
+ * @author Selina
+ * @version 1.0
+ * @since 2021-11-01
+ */
 public class DataHelper {
 	private List<Team> teams = new ArrayList<Team>();
 	
