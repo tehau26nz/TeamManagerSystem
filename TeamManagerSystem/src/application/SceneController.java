@@ -107,13 +107,13 @@ public class SceneController {
 	
 	@FXML public void handleDashboardImageViewAction(Event e) throws IOException {
 		if(e.getSource() == imvdashboardEvent) {
-			loadStages("Events.fxml");
+			loadStages("/layouts/Events.fxml");
 		}else if(e.getSource() == imvDashboardStatistics){
-			loadStages("Club.fxml");
+			loadStages("/layouts/Club.fxml");
 		}else if(e.getSource() == imvdashboardteams){
-			loadStages("Teams.fxml");
+			loadStages("/layouts/Teams.fxml");
 		}else if(e.getSource() == imvDashboardPlayers){
-			loadStages("Players.fxml");
+			loadStages("/layouts/Players.fxml");
 		}
 	}
 	
