@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
    <children>
       <BorderPane>
            <top>
@@ -23,6 +23,11 @@
                           <Font size="24.0" />
                        </font>
                     </Text>
+                  <ImageView fx:id="imvDashboardPrevious" fitHeight="54.0" fitWidth="68.0" layoutX="3.0" layoutY="5.0" onMouseClicked="#handleImageViewAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../previous_icon.png" />
+                     </image>
+                  </ImageView>
                  </children>
               </Pane>
            </top>
@@ -39,10 +44,10 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                       </rowConstraints>
                        <children>
-                          <Button id="btnEvents" fx:id="btnEvents" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#switchToEvents" prefHeight="133.0" prefWidth="234.0" text="Events" />
-                          <Button id="btnStatistics" fx:id="btnStatistics" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="140.0" prefWidth="232.0" text="Statistics" GridPane.columnIndex="1" />
-                          <Button id="btnPlayers" fx:id="btnPlayers" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#switchToPlayers" prefHeight="128.0" prefWidth="237.0" text="Players" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                          <Button id="btnTeams" fx:id="btnteams" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#switchToTeams" prefHeight="130.0" prefWidth="233.0" text="Teams" GridPane.rowIndex="1" />
+                          <Button id="btnEvents" fx:id="btnEvents" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="133.0" prefWidth="234.0" text="Events" />
+                          <Button id="btnStatistics" fx:id="btnStatistics" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="140.0" prefWidth="232.0" text="Statistics" GridPane.columnIndex="1" />
+                          <Button id="btnPlayers" fx:id="btnPlayers" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="128.0" prefWidth="237.0" text="Players" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                          <Button id="btnTeams" fx:id="btnteams" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="130.0" prefWidth="233.0" text="Teams" GridPane.rowIndex="1" />
                         <ImageView fx:id="imvdashboardEvent" fitHeight="89.0" fitWidth="233.0" onMouseClicked="#handleDashboardImageViewAction" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <image>
                               <Image url="@../dashboard_event.png" />

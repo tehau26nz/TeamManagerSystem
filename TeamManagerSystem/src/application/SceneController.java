@@ -19,10 +19,6 @@ public class SceneController {
 	private Scene scene;
 	private Parent root;
 	private Button btnStatistics;
-	@FXML private ImageView imvdashboardEvent;
-	@FXML private ImageView imvDashboardStatistics;
-	@FXML private ImageView imvdashboardteams;
-	@FXML private ImageView imvDashboardPlayers;
 
 	public void switchToIntro(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Intro.fxml"));
@@ -103,29 +99,5 @@ public class SceneController {
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
-	}
-	
-	@FXML public void handleDashboardImageViewAction(Event e) throws IOException {
-		if(e.getSource() == imvdashboardEvent) {
-			loadStages("/layouts/Events.fxml",e);
-		}else if(e.getSource() == imvDashboardStatistics){
-			loadStages("/layouts/Club.fxml",e);
-		}else if(e.getSource() == imvdashboardteams){
-			loadStages("/layouts/Teams.fxml",e);
-		}else if(e.getSource() == imvDashboardPlayers){
-			loadStages("/layouts/Players.fxml",e);
-		}
-	}
-	
-	private void loadStages(String fxml, Event e) {
-		try {
-			Parent root = FXMLLoader.load(getClass().getResource(fxml));
-			stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-			stage.setScene(new Scene(root));
-			stage.show();
-			
-		}catch(IOException ex) {
-			ex.printStackTrace();
-		}
 	}
 }

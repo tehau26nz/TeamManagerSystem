@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeamManagerDashboardController">
    <children>
       <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
                <children>
-                  <ImageView fx:id="previousBtn" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#switchToLoginSelection">
+                  <ImageView fx:id="imvTeamManagerDashboardPrevious" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleImageViewAction">
                      <image>
                         <Image url="@../previous_icon.png" />
                      </image>
@@ -38,17 +38,17 @@
                </children>
             </HBox>
          </children></Pane>
-        <Button id="btnTeams" fx:id="btnteams" layoutX="32.0" layoutY="146.0" mnemonicParsing="false" onAction="#switchToTeams" prefHeight="70.0" prefWidth="200.0" text="Manage Teams">
+        <Button id="btnTeams" fx:id="btnteams" layoutX="32.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="70.0" prefWidth="200.0" text="View League Teams">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-        <Button id="btnPlayers" fx:id="btnEvents" layoutX="32.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToEvents" prefHeight="50.0" prefWidth="200.0" text="View Events">
+        <Button id="btnPlayers" fx:id="btnEvents" layoutX="32.0" layoutY="242.0" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View Events">
          <font>
             <Font name="Gill Sans MT Bold" size="13.0" />
          </font>
       </Button>
-        <Button id="btnLeagures" layoutX="32.0" layoutY="320.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Contact">
+        <Button id="btnLeagures" layoutX="32.0" layoutY="458.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Contact">
          <font>
             <Font name="Gill Sans MT Bold" size="13.0" />
          </font>
@@ -63,5 +63,15 @@
             <Image url="@../highlights.png" />
          </image>
       </ImageView>
+      <Button fx:id="btnPlayers" layoutX="32.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="Manage Players">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnStatistics" layoutX="32.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="56.0" prefWidth="200.0" text="View Club Statistics">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
