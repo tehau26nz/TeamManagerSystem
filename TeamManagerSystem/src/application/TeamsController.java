@@ -41,7 +41,7 @@ public class TeamsController implements Initializable {
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		teamNameCol.setCellValueFactory(new PropertyValueFactory<FootyTeam,String>("footyTeamName"));
 		teamCoachCol.setCellValueFactory(new PropertyValueFactory<FootyTeam,String>("footyTeamCoach"));
-		footyTeams.add(new FootyTeam("Pheonix","Selina Yu"));
+		//footyTeams.add(new FootyTeam("Pheonix","Selina Yu"));
 		
 		List<Team> teams = new DataHelper().getTeams();
 		for (Team t : teams) {

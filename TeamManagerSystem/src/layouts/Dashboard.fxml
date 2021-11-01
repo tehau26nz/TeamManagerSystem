@@ -37,9 +37,9 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                       </rowConstraints>
                        <children>
-                          <Button id="btnPlayers" fx:id="btnEvents" mnemonicParsing="false" onAction="#switchToEvents" prefHeight="91.0" prefWidth="189.0" text="Events" />
+                          <Button id="btnEvents" fx:id="btnEvents" mnemonicParsing="false" onAction="#switchToEvents" prefHeight="91.0" prefWidth="189.0" text="Events" />
                           <Button id="btnStatistics" fx:id="btnStatistics" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="90.0" prefWidth="188.0" text="Statistics" GridPane.columnIndex="1" />
-                          <Button id="btnLeagures" mnemonicParsing="false" prefHeight="89.0" prefWidth="189.0" text="Leagues" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                          <Button id="btnPlayers" fx:id="btnPlayers" mnemonicParsing="false" onAction="#switchToPlayers" prefHeight="89.0" prefWidth="189.0" text="Players" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                           <Button id="btnTeams" fx:id="btnteams" mnemonicParsing="false" onAction="#switchToTeams" prefHeight="90.0" prefWidth="189.0" text="Teams" GridPane.rowIndex="1" />
                        </children>
                     </GridPane>

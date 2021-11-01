@@ -9,6 +9,7 @@ public class Player {
 	private String name;
 	private int height;
 	private String birthplace;
+	private String allPositions;
 	private List<String> playerPositions;
 
 	public Player(String name, int height, String birthplace, String[] positions) {
@@ -20,6 +21,15 @@ public class Player {
 		// for (String s : positions) {
 		// this.playerPositions.add(s);
 		// }
+		this.setAllPositions();
+	}
+	
+	public Player(String name, Integer height, String birthplace, String allpositions) {
+		super();
+		this.name = name;
+		this.height = height;
+		this.birthplace = birthplace;
+		this.allPositions =allpositions;
 	}
 
 	// Method to get player name
@@ -58,5 +68,13 @@ public class Player {
 	// Method
 	public void addPosition(String p) {
 		playerPositions.add(p);
+	}
+
+	public String getAllPositions() {
+		return allPositions;
+	}
+
+	public void setAllPositions() {
+		this.allPositions =  String.join(",", playerPositions);
 	}
 }
