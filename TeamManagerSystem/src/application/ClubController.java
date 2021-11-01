@@ -36,7 +36,7 @@ public class ClubController implements Initializable {
 		ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
 		new PieChart.Data("Wins 38.6%", 38.6),
 		new PieChart.Data("Draws 30.7%", 30.7),
-		new PieChart.Data("Losses 30.7", 30.7)
+		new PieChart.Data("Losses 30.7%", 30.7)
 		);
 		
 		pieChart.setData(pieChartData);
