@@ -12,7 +12,32 @@
 
 <AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
-      <Pane layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;" />
+      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
+               <children>
+                  <ImageView fx:id="previousBtn" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#switchToLoginSelection">
+                     <image>
+                        <Image url="@../previous_icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="16.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="teamsHeader" alignment="CENTER" text="Welcome Team Manager" textAlignment="CENTER">
+                     <font>
+                        <Font name="Gill Sans MT" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children></Pane>
         <Button id="btnTeams" fx:id="btnteams" layoutX="32.0" layoutY="146.0" mnemonicParsing="false" onAction="#switchToTeams" prefHeight="70.0" prefWidth="200.0" text="Manage Teams">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -28,29 +53,6 @@
             <Font name="Gill Sans MT Bold" size="13.0" />
          </font>
       </Button>
-      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="960.0">
-         <children>
-            <ImageView fx:id="previousBtn" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#switchToLoginSelection">
-               <image>
-                  <Image url="@../previous_icon.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="10.0" right="16.0" />
-               </HBox.margin>
-            </ImageView>
-            <Label fx:id="teamsHeader" alignment="CENTER" text="Welcome Team Manager" textAlignment="CENTER">
-               <font>
-                  <Font name="Gill Sans MT" size="24.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <padding>
-                  <Insets bottom="20.0" top="20.0" />
-               </padding>
-            </Label>
-         </children>
-      </HBox>
       <Label layoutX="544.0" layoutY="118.0" text="Higlights">
          <font>
             <Font name="Gill Sans MT Bold" size="20.0" />
