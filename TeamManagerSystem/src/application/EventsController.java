@@ -14,6 +14,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import models.TeamEvent;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -99,39 +100,4 @@ public class EventsController implements Initializable {
 		stage.setScene(scene);
 		stage.show();
 	}
-
-	public static class TeamEvent {
-		private SimpleStringProperty eventName, eventLocation, eventDate;
-
-		public TeamEvent(String name, String location, String date) {
-			this.eventName = new SimpleStringProperty(name);
-			this.eventLocation = new SimpleStringProperty(location);
-			this.eventDate = new SimpleStringProperty(date);
-		}
-
-		public String getEventDate() {
-			return eventDate.get();
-		}
-
-		public void setEventDate(SimpleStringProperty eventDate) {
-			this.eventDate = eventDate;
-		}
-
-		public String getEventLocation() {
-			return eventLocation.get();
-		}
-
-		public void setEventLocation(SimpleStringProperty eventLocation) {
-			this.eventLocation = eventLocation;
-		}
-
-		public String getEventName() {
-			return eventName.get();
-		}
-
-		public void setEventName(SimpleStringProperty eventName) {
-			this.eventName = eventName;
-		}
-	}
-
 }

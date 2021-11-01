@@ -24,9 +24,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 
 public class TeamsController implements Initializable {
-	@FXML private TableView<FootyTeam> teamTableView;
-	@FXML private TableColumn<FootyTeam,String> teamNameCol;
-	@FXML private TableColumn<FootyTeam,String> teamCoachCol;
+	@FXML private TableView<Team> teamTableView;
+	@FXML private TableColumn<Team,String> teamNameCol;
+	@FXML private TableColumn<Team,String> teamCoachCol;
 	
 	@FXML private TextField addTeamName;
 	@FXML private TextField addTeamCoach;
@@ -35,17 +35,17 @@ public class TeamsController implements Initializable {
 	private Scene scene;
 	private Parent root;
 	
-	private ObservableList<FootyTeam> footyTeams = FXCollections.observableArrayList();
+	private ObservableList<Team> footyTeams = FXCollections.observableArrayList();
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		teamNameCol.setCellValueFactory(new PropertyValueFactory<FootyTeam,String>("footyTeamName"));
-		teamCoachCol.setCellValueFactory(new PropertyValueFactory<FootyTeam,String>("footyTeamCoach"));
+		teamNameCol.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
+		teamCoachCol.setCellValueFactory(new PropertyValueFactory<Team,String>("coachName"));
 		//footyTeams.add(new FootyTeam("Pheonix","Selina Yu"));
 		
 		List<Team> teams = new DataHelper().getTeams();
 		for (Team t : teams) {
-			footyTeams.add(new FootyTeam(t.getTeamName(), t.getCoachName()));
+			footyTeams.add(new Team(t.getTeamName(), t.getCoachName()));
 		}
 		
 		teamTableView.setItems(footyTeams);
@@ -60,7 +60,7 @@ public class TeamsController implements Initializable {
 	}
 	
 	@FXML public void handleButtonAction(Event e) {
-		    footyTeams.add(new FootyTeam(addTeamName.getText(),addTeamCoach.getText()));
+		    footyTeams.add(new Team(addTeamName.getText(),addTeamCoach.getText()));
 			
 		    addTeamName.clear();
 		    addTeamCoach.clear();
@@ -70,28 +70,28 @@ public class TeamsController implements Initializable {
 		teamTableView.getItems().removeAll(teamTableView.getSelectionModel().getSelectedItems());
 	}
 	
-	public static class FootyTeam {
-		private SimpleStringProperty footyTeamName,footyTeamCoach;
-		
-		public FootyTeam(String name,String coach) {
-			this.setFootyTeamName(new SimpleStringProperty(name));
-			this.setFootyTeamCoach(new SimpleStringProperty(coach));
-		}
-
-		public String getFootyTeamCoach() {
-			return footyTeamCoach.get();
-		}
-
-		public void setFootyTeamCoach(SimpleStringProperty footyTeamCoach) {
-			this.footyTeamCoach = footyTeamCoach;
-		}
-
-		public String getFootyTeamName() {
-			return footyTeamName.get();
-		}
-
-		public void setFootyTeamName(SimpleStringProperty footyTeamName) {
-			this.footyTeamName = footyTeamName;
-		}
-	}
+//	public static class FootyTeam {
+//		private SimpleStringProperty footyTeamName,footyTeamCoach;
+//		
+//		public FootyTeam(String name,String coach) {
+//			this.setFootyTeamName(new SimpleStringProperty(name));
+//			this.setFootyTeamCoach(new SimpleStringProperty(coach));
+//		}
+//
+//		public String getFootyTeamCoach() {
+//			return footyTeamCoach.get();
+//		}
+//
+//		public void setFootyTeamCoach(SimpleStringProperty footyTeamCoach) {
+//			this.footyTeamCoach = footyTeamCoach;
+//		}
+//
+//		public String getFootyTeamName() {
+//			return footyTeamName.get();
+//		}
+//
+//		public void setFootyTeamName(SimpleStringProperty footyTeamName) {
+//			this.footyTeamName = footyTeamName;
+//		}
+//	}
 }
