@@ -33,8 +33,16 @@ public class SceneController {
 		stage.show();
 	}
 	
-	public void switchToLogin(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Login.fxml"));
+	public void switchToTeamManagerLogin(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/TeamManagerLogin.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	public void switchToLeagueManagerLogin(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/LeagueManagerLogin.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -48,6 +56,15 @@ public class SceneController {
 		stage.setScene(scene);
 		stage.show();
 	}
+	
+	public void switchToTeamManagerDashboard(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/TeamManagerDashboard.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
 	
 	public void switchToEvents(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Events.fxml"));
