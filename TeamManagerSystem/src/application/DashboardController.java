@@ -18,16 +18,11 @@ import javafx.stage.Stage;
 public class DashboardController implements Initializable {
 @FXML Button btnEvents;
 @FXML Button btnteams;
-	
-	public void handleButtonClicks(Event mouseEvent) {
-		if(mouseEvent.getSource() == btnEvents) {
-			loadStages("UI_Events.fxml");
-		}else if(mouseEvent.getSource() == btnteams){
-			loadStages("Teams.fxml");
-		}
-	}
-	
 
+private Stage stage;
+private Scene scene;
+private Parent root;
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
