@@ -50,6 +50,14 @@ public class TeamsController implements Initializable {
 		
 		teamTableView.setItems(footyTeams);
 	}
+	@FXML
+	public void switchToPrevious(Event e) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
+		stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
 	
 	@FXML public void handleButtonAction(Event e) {
 		    footyTeams.add(new FootyTeam(addTeamName.getText(),addTeamCoach.getText()));
@@ -60,20 +68,6 @@ public class TeamsController implements Initializable {
 	
 	@FXML public void deleteRowFromTableViewAction(Event e) {
 		teamTableView.getItems().removeAll(teamTableView.getSelectionModel().getSelectedItems());
-	}
-	
-	/**
-	 * Allow users to delete the selected event
-	 * 
-	 * @param e
-	 */
-	@FXML
-	public void switchToDashboard(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
 	}
 	
 	public static class FootyTeam {

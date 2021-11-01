@@ -18,7 +18,7 @@
       <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;" />
       <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
          <children>
-            <ImageView fx:id="backBtn" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#switchToDashboard">
+            <ImageView fx:id="previousBtn" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#switchToPrevious">
                <image>
                   <Image url="@../previous_icon.png" />
                </image>
@@ -26,7 +26,7 @@
                   <Insets left="10.0" right="16.0" />
                </HBox.margin>
             </ImageView>
-            <Label fx:id="eventHeader" alignment="CENTER" text="Teams" textAlignment="CENTER">
+            <Label fx:id="teamsHeader" alignment="CENTER" text="Teams" textAlignment="CENTER">
                <font>
                   <Font name="Gill Sans MT" size="24.0" />
                </font>
