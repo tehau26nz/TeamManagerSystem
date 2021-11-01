@@ -16,13 +16,18 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClubController">
    <top>
-      <Pane prefHeight="53.0" prefWidth="760.0" style="-fx-background-color: #039BE5;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="55.0" prefWidth="844.0" style="-fx-background-color: #039BE5;" BorderPane.alignment="CENTER">
          <children>
             <Text fill="#ddd0d0" layoutX="78.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team Statistics">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
+            <ImageView fx:id="ivClubPrevious" fitHeight="58.0" fitWidth="59.0" layoutX="4.0" layoutY="-4.0" onMouseClicked="#handleImageViewAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../previous_icon.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </top>
