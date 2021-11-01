@@ -93,7 +93,7 @@ public class EventsController implements Initializable {
 	 */
 	@FXML
 	public void switchToPrevious(Event e) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
 		stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);

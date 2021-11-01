@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import models.Player;
+import models.Team;
+
 //nz.ac.wgtn.teammanager.ui
 //nz.ac.wgtn.teammanager.models
 //nz.ac.wgtn.teammanager.controllers

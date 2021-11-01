@@ -16,7 +16,7 @@ public class SceneController {
 	private Parent root;
 
 	public void switchToIntro(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Intro.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -24,7 +24,7 @@ public class SceneController {
 	}
 
 	public void switchToLoginSelection(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("LoginSelection.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/LoginSelection.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -32,7 +32,7 @@ public class SceneController {
 	}
 	
 	public void switchToLogin(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Login.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -40,7 +40,7 @@ public class SceneController {
 	}
 	
 	public void switchToDashboard(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -48,7 +48,7 @@ public class SceneController {
 	}
 	
 	public void switchToEvents(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Events.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Events.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -56,7 +56,7 @@ public class SceneController {
 	}
 	
 	public void switchToTeams(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Teams.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Teams.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);

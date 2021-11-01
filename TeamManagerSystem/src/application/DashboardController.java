@@ -31,7 +31,7 @@ private Parent root;
 	
 	private void loadStages(String fxml) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Teams.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/layouts/Teams.fxml"));
 			Stage stage = new Stage();
 			Image icon = new Image("football_color_icon.png");
 			stage.getIcons().add(icon);

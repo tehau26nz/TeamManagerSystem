@@ -14,6 +14,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import models.Team;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -68,7 +69,7 @@ public class TeamsController implements Initializable {
 	 */
 	@FXML
 	public void switchToDashboard(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
