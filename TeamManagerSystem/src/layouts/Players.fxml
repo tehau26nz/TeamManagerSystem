@@ -4,6 +4,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -12,15 +14,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayersController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayersController">
    <top>
       <Pane prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #039BE5;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="#e4d2d2" layoutX="42.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players">
+            <Text fill="#e4d2d2" layoutX="75.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
+            <ImageView fx:id="ivPlayerPrevious" fitHeight="50.0" fitWidth="66.0" layoutX="4.0" layoutY="1.0" onMouseClicked="#handleImageViewAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../previous_icon.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </top>
