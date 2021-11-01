@@ -61,15 +61,19 @@ public class ClubController implements Initializable {
 	}
 	
 	@FXML public void handleImageViewAction(Event e) throws IOException {
+		
 		Parent root;
+		
 		if(LoginSelectionController.managerAccessLevel.equals("teamManager")) {
 			 root = FXMLLoader.load(getClass().getResource("/layouts/TeamManagerDashboard.fxml"));
 		}else {
 			root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
 		}
+		
 		Stage stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+		
 	}
 }
