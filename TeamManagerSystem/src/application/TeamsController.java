@@ -69,29 +69,4 @@ public class TeamsController implements Initializable {
 	@FXML public void deleteRowFromTableViewAction(Event e) {
 		teamTableView.getItems().removeAll(teamTableView.getSelectionModel().getSelectedItems());
 	}
-	
-//	public static class FootyTeam {
-//		private SimpleStringProperty footyTeamName,footyTeamCoach;
-//		
-//		public FootyTeam(String name,String coach) {
-//			this.setFootyTeamName(new SimpleStringProperty(name));
-//			this.setFootyTeamCoach(new SimpleStringProperty(coach));
-//		}
-//
-//		public String getFootyTeamCoach() {
-//			return footyTeamCoach.get();
-//		}
-//
-//		public void setFootyTeamCoach(SimpleStringProperty footyTeamCoach) {
-//			this.footyTeamCoach = footyTeamCoach;
-//		}
-//
-//		public String getFootyTeamName() {
-//			return footyTeamName.get();
-//		}
-//
-//		public void setFootyTeamName(SimpleStringProperty footyTeamName) {
-//			this.footyTeamName = footyTeamName;
-//		}
-//	}
 }

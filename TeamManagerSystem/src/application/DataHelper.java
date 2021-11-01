@@ -24,7 +24,7 @@ public class DataHelper {
 		return teams;
 	}
 
-	/*Needs a teams.txt file in the project before removing commenting*/
+	/*load teams from  the teams.txt file*/
 	public void setTeams() {
 		this.loadFile();
 	}

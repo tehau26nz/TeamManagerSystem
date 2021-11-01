@@ -107,25 +107,25 @@ public class SceneController {
 	
 	@FXML public void handleDashboardImageViewAction(Event e) throws IOException {
 		if(e.getSource() == imvdashboardEvent) {
-			loadStages("/layouts/Events.fxml");
+			loadStages("/layouts/Events.fxml",e);
 		}else if(e.getSource() == imvDashboardStatistics){
-			loadStages("/layouts/Club.fxml");
+			loadStages("/layouts/Club.fxml",e);
 		}else if(e.getSource() == imvdashboardteams){
-			loadStages("/layouts/Teams.fxml");
+			loadStages("/layouts/Teams.fxml",e);
 		}else if(e.getSource() == imvDashboardPlayers){
-			loadStages("/layouts/Players.fxml");
+			loadStages("/layouts/Players.fxml",e);
 		}
 	}
 	
-	private void loadStages(String fxml) {
+	private void loadStages(String fxml, Event e) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource(fxml));
-			Stage stage = new Stage();
+			stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 			stage.setScene(new Scene(root));
 			stage.show();
 			
-		}catch(IOException e) {
-			e.printStackTrace();
+		}catch(IOException ex) {
+			ex.printStackTrace();
 		}
 	}
 }
