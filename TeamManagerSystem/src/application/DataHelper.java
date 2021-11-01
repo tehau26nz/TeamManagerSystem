@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+//nz.ac.wgtn.teammanager.ui
+//nz.ac.wgtn.teammanager.models
+//nz.ac.wgtn.teammanager.controllers
+//nz.ac.wgtn.teammanager.tests
 public class DataHelper {
 	private List<Team> teams = new ArrayList<Team>();
 	

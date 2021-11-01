@@ -1,5 +1,7 @@
 package application;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Player {
@@ -7,19 +9,20 @@ public class Player {
 	private String name;
 	private int height;
 	private String birthplace;
-	private List<String> playerPositions = new ArrayList<>();
+	private List<String> playerPositions;
 
 	public Player(String name, int height, String birthplace, String[] positions) {
 		super();
 		this.name = name;
 		this.height = height;
 		this.birthplace = birthplace;
-		for (String s : positions) {
-			this.playerPositions.add(s);
-		}
+		playerPositions = new ArrayList<>(Arrays.asList(positions));
+		// for (String s : positions) {
+		// this.playerPositions.add(s);
+		// }
 	}
-	
-	//Method to get player name
+
+	// Method to get player name
 	public String getName() {
 		return name;
 	}
