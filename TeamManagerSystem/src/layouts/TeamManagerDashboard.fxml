@@ -1,99 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-
-<AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeamManagerDashboardController">
-   <children>
-      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;">
-         <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
-               <children>
-                  <ImageView fx:id="imvTeamManagerDashboardPrevious" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleImageViewAction">
-                     <image>
-                        <Image url="@../previous_icon.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets left="10.0" right="16.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <Label fx:id="teamsHeader" alignment="CENTER" text="Welcome Team Manager" textAlignment="CENTER">
-                     <font>
-                        <Font name="Gill Sans MT" size="24.0" />
-                     </font>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <padding>
-                        <Insets bottom="20.0" top="20.0" />
-                     </padding>
-                  </Label>
-               </children>
-            </HBox>
-<<<<<<< HEAD
-            <VBox layoutY="77.0" prefHeight="563.0" prefWidth="277.0" spacing="40.0">
-=======
-            <VBox layoutY="78.0" prefHeight="562.0" prefWidth="277.0" spacing="40.0">
->>>>>>> branch 'master' of git@github.com:tehau26nz/TeamManagerSystem.git
-               <children>
-                  <Button fx:id="btnPlayers" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="Manage Players">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="13.0" />
-                     </font>
-                  </Button>
-                    <Button id="btnPlayers" fx:id="btnEvents" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View Events">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="13.0" />
-                     </font>
-                  </Button>
-                    <Button id="btnTeams" fx:id="btnteams" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View League Teams">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="13.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnStatistics" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View Club Statistics">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="13.0" />
-                     </font>
-                  </Button>
-                    <Button id="btnLeagures" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Contact">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="13.0" />
-                     </font>
-                  </Button>
-               </children>
-               <padding>
-                  <Insets bottom="20.0" left="20.0" top="50.0" />
-               </padding>
-            </VBox>
-            <VBox layoutX="265.0" layoutY="77.0" prefHeight="563.0" prefWidth="695.0">
-               <children>
-                  <Label text="Higlights">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="20.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="20.0" />
-                     </padding>
-                  </Label>
-                  <ImageView fitHeight="348.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../highlights.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <padding>
-                  <Insets left="100.0" top="30.0" />
-               </padding>
-            </VBox>
-         </children></Pane>
-   </children>
-</AnchorPane>
+	
+	<?import javafx.geometry.Insets?>
+	<?import javafx.scene.control.Button?>
+	<?import javafx.scene.control.Label?>
+	<?import javafx.scene.image.Image?>
+	<?import javafx.scene.image.ImageView?>
+	<?import javafx.scene.layout.AnchorPane?>
+	<?import javafx.scene.layout.HBox?>
+	<?import javafx.scene.layout.Pane?>
+	<?import javafx.scene.layout.VBox?>
+	<?import javafx.scene.text.Font?>
+	
+	<AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeamManagerDashboardController">
+	   <children>
+	      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;">
+	         <children>
+	            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
+	               <children>
+	                  <ImageView fx:id="imvTeamManagerDashboardPrevious" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleImageViewAction">
+	                     <image>
+	                        <Image url="@../previous_icon.png" />
+	                     </image>
+	                     <HBox.margin>
+	                        <Insets left="10.0" right="16.0" />
+	                     </HBox.margin>
+	                  </ImageView>
+	                  <Label fx:id="teamsHeader" alignment="CENTER" text="Welcome Team Manager" textAlignment="CENTER">
+	                     <font>
+	                        <Font name="Gill Sans MT" size="24.0" />
+	                     </font>
+	                     <opaqueInsets>
+	                        <Insets />
+	                     </opaqueInsets>
+	                     <padding>
+	                        <Insets bottom="20.0" top="20.0" />
+	                     </padding>
+	                  </Label>
+	               </children>
+	            </HBox>
+	            <VBox layoutY="78.0" prefHeight="562.0" prefWidth="277.0" spacing="40.0">
+	               <children>
+	                  <Button fx:id="btnPlayers" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="Manage Players">
+	                     <font>
+	                        <Font name="Gill Sans MT Bold" size="13.0" />
+	                     </font>
+	                  </Button>
+	                    <Button id="btnPlayers" fx:id="btnEvents" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View Events">
+	                     <font>
+	                        <Font name="Gill Sans MT Bold" size="13.0" />
+	                     </font>
+	                  </Button>
+	                    <Button id="btnTeams" fx:id="btnteams" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View League Teams">
+	                     <font>
+	                        <Font name="Gill Sans MT Bold" size="13.0" />
+	                     </font>
+	                  </Button>
+	                  <Button fx:id="btnStatistics" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="View Club Statistics">
+	                     <font>
+	                        <Font name="Gill Sans MT Bold" size="13.0" />
+	                     </font>
+	                  </Button>
+	                    <Button id="btnLeagures" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Contact">
+	                     <font>
+	                        <Font name="Gill Sans MT Bold" size="13.0" />
+	                     </font>
+	                  </Button>
+	               </children>
+	               <padding>
+	                  <Insets bottom="20.0" left="20.0" top="100.0" />
+	               </padding>
+	            </VBox>
+	         </children></Pane>
+	      <VBox layoutX="272.0" layoutY="70.0" prefHeight="569.0" prefWidth="688.0">
+	         <children>
+	            <Label text="Higlights">
+	               <font>
+	                  <Font name="Gill Sans MT Bold" size="20.0" />
+	               </font>
+	               <padding>
+	                  <Insets bottom="20.0" />
+	               </padding>
+	            </Label>
+	            <ImageView fitHeight="348.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
+	               <image>
+	                  <Image url="@../highlights.png" />
+	               </image>
+	            </ImageView>
+	         </children>
+	         <padding>
+	            <Insets left="100.0" top="30.0" />
+	         </padding>
+	      </VBox>
+	   </children>
+	</AnchorPane>
