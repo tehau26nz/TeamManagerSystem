@@ -3,7 +3,6 @@ package application;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
@@ -31,33 +30,56 @@ public class ClubController implements Initializable {
 	@FXML private TableColumn<Stats, Integer> lCol;
 	@FXML private TableColumn<Stats, Integer> pointsCol;
 	private ObservableList<Stats> clubStats = FXCollections.observableArrayList();
+	private ObservableList<PieChart.Data> pieChartData;
 	@FXML private ImageView ivClubPrevious;
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
+		setUpRankTableView();
+		setUpPieChart();
+		tableStats.setItems(clubStats);
+		addStats();
+
+	}
+	
+	public Stats createNewStats(int rank, String club,int won,int drawn,int lost,int points) {
+		return new Stats(rank,club,won,drawn,lost,points);
+	}
+	
+	public void createNewStatsAndAdd(int rank, String club,int won,int drawn,int lost,int points) {
+		clubStats.add(new Stats(rank,club,won,drawn,lost,points));
+	}
+	
+	public void addStats() {
+		
+		createNewStatsAndAdd(1,"Chelsea",8,1,1,25);
+		createNewStatsAndAdd(2,"Liverpool",6,4,0,22);
+		createNewStatsAndAdd(3,"Manchester City",6,2,2,20);
+		createNewStatsAndAdd(4,"Manchester United",5,2,3,17);
+		createNewStatsAndAdd(5,"Arsenal",5,2,3,17);
+		createNewStatsAndAdd(6,"Tottenham HotSpur",5,0,5,15);
+		
+	}
+	
+	public void setUpPieChart() {
 		ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
-		new PieChart.Data("Wins 38.6%", 38.6),
-		new PieChart.Data("Draws 30.7%", 30.7),
-		new PieChart.Data("Losses 30.7%", 30.7)
-		);
-		
-		pieChart.setData(pieChartData);
-		pieChart.autosize();
-		
+				new PieChart.Data("Won 60%", 60),
+				new PieChart.Data("Drawn 20%", 20),
+				new PieChart.Data("Lost 20%", 20)
+				);
+				
+				pieChart.setData(pieChartData);
+				pieChart.autosize();
+	}
+	
+	public void setUpRankTableView() {
 		rankCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("rank"));
 		clubCol.setCellValueFactory(new PropertyValueFactory<Stats,String>("club"));
-		wCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("win"));
-		dCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("draw"));
+		wCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("won"));
+		dCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("drawn"));
 		lCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("lost"));
 		pointsCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("points"));
 	
-		tableStats.setItems(clubStats);
-		clubStats.add(new Stats(1,"Chelsea",8,1,1,25));
-		clubStats.add(new Stats(2,"Liverpool",6,4,0,22));
-		clubStats.add(new Stats(3,"Manchester City",6,2,2,20));
-		clubStats.add(new Stats(4,"Manchester United",5,2,3,17));
-		clubStats.add(new Stats(5,"Arsenal",5,2,3,17));
-		clubStats.add(new Stats(6,"Macarthur FC",5,0,5,15));
-		clubStats.add(new Stats(7,"Crystal Palace",2,6,2,12));
 	}
 	
 	@FXML public void handleImageViewAction(Event e) throws IOException {
