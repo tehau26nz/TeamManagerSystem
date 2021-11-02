@@ -66,18 +66,20 @@ public class EventsController implements Initializable {
 	// League manager only allows to view teams
 	public void setButtonsVisibility(String managerType) {
 		switch(managerType) {
-			case("teamManager"):
+			case "teamManager":
 				btnAddEvent.setVisible(false);
 				btnDeleteEvent.setVisible(false);
 				addEventName.setVisible(false);
 				addEventLocation.setVisible(false);
 				addEventDate.setVisible(false);
-			case("leagueManager"):
+				break;
+			case "leagueManager":
 				btnAddEvent.setVisible(true);
 				btnDeleteEvent.setVisible(true);
 				addEventName.setVisible(true);
 				addEventLocation.setVisible(true);
 				addEventDate.setVisible(true);
+				break;
 		}
 	}
 

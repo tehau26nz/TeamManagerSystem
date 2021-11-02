@@ -13,6 +13,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -36,8 +37,10 @@ public class PlayersController  implements Initializable {
 	@FXML private Button btnAddPlayer;
 	@FXML private Button btnDeletePlayer;
 	@FXML private ImageView ivPlayerPrevious;
+	@FXML private ComboBox<String> cbbTeams;
 	
 	private ObservableList<Player> players = FXCollections.observableArrayList();
+	private ObservableList<String> teamnames = FXCollections.observableArrayList();
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -46,9 +49,17 @@ public class PlayersController  implements Initializable {
 		playerHeightCol.setCellValueFactory(new PropertyValueFactory<Player,Integer>("height"));
 		playerAllPositionsCol.setCellValueFactory(new PropertyValueFactory<Player,String>("allPositions"));
 		
-		Team team = new DataHelper().getTeams().get(2);
+		//Team ComboBox
+		teamnames.addAll(new DataHelper().getTeamnames());
+		cbbTeams.setItems(teamnames);
+		cbbTeams.getSelectionModel().selectFirst();
+		handleSection();
+		
+		//Player TableViews
+		Team team = new DataHelper().getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());
 		players.addAll(team.getTeamPlayers());
 		playerTableView.setItems(players);
+		
 		//League manager only allows to view players
 		if(LoginSelectionController.managerAccessLevel.equals("leagueManager")) {
 			btnAddPlayer.setVisible(false);
@@ -57,6 +68,7 @@ public class PlayersController  implements Initializable {
 			addPlayerBirthplace.setVisible(false);
 			addPlayerHeight.setVisible(false);
 			addPlayerAllPositions.setVisible(false);
+			cbbTeams.setVisible(true);
 		}else {
 			btnAddPlayer.setVisible(true);
 			btnDeletePlayer.setVisible(true);
@@ -64,6 +76,7 @@ public class PlayersController  implements Initializable {
 			addPlayerBirthplace.setVisible(true);
 			addPlayerHeight.setVisible(true);
 			addPlayerAllPositions.setVisible(true);
+			cbbTeams.setVisible(false);
 		}
 	}
 	
@@ -78,6 +91,14 @@ public class PlayersController  implements Initializable {
 		addPlayerBirthplace.clear();
 		addPlayerHeight.clear();
 		addPlayerAllPositions.clear();
+	}
+	
+	public void handleSection() {
+		cbbTeams.setOnAction(event ->{
+			Team team = new DataHelper().getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());
+			players.clear();
+			players.addAll(team.getTeamPlayers());
+		});
 	}
 	
 	@FXML public void handleImageViewAction(Event e) throws IOException {

@@ -24,9 +24,11 @@ import models.Team;
  */
 public class DataHelper {
 	private List<Team> teams = new ArrayList<Team>();
+	private List<String> teamnames = new ArrayList<String>();
 	
 	public DataHelper() {
 		setTeams();
+		setTeamnames();
 	}
 
 	public List<Team> getTeams() {
@@ -69,4 +71,24 @@ public class DataHelper {
 			e.printStackTrace();
 		}
 	}
+
+	public List<String> getTeamnames() {
+		return teamnames;
+	}
+
+	public void setTeamnames() {
+		for (Team t : teams) {
+			teamnames.add(t.getTeamName());
+		}
+	}
+	
+	public Team getTeambyName(String teamname) {
+		for (Team t : teams) {
+			if(t.getTeamName().equals(teamname)) {
+				return t;
+			}
+		}
+		return null;
+	}
+
 }
