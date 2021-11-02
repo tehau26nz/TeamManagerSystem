@@ -12,23 +12,28 @@
    <children>
       <Pane prefHeight="640.0" prefWidth="960.0">
          <children>
-            <Button fx:id="skipBtn" layoutX="380.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchToLoginSelection" prefHeight="50.0" prefWidth="200.0" text="Skip">
+            <Button fx:id="skipBtn" layoutX="380.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchToLoginSelection" prefHeight="50.0" prefWidth="200.0" text="Enter">
                <font>
                   <Font name="Gill Sans MT Bold" size="18.0" />
                </font></Button>
-            <Label fx:id="descriptionLabel" alignment="CENTER" layoutX="230.0" layoutY="345.0" prefHeight="100.0" prefWidth="500.0" text="From team management to your game" textAlignment="CENTER">
+            <Label fx:id="descriptionLabel" alignment="CENTER" layoutX="280.0" layoutY="260.0" prefHeight="60.0" prefWidth="400.0" text="From team management to your game" textAlignment="CENTER">
                <font>
-                  <Font name="Gill Sans MT" size="18.0" />
+                  <Font name="Gill Sans MT Bold Italic" size="18.0" />
                </font>
             </Label>
-            <ImageView fx:id="logoImage" fitHeight="150.0" fitWidth="146.0" layoutX="407.0" layoutY="195.0">
+            <ImageView fx:id="logoImage" fitHeight="130.0" fitWidth="126.0" layoutX="417.0" layoutY="121.0">
                <image>
                   <Image url="@../football_color_icon.png" />
                </image>
             </ImageView>
-            <Label fx:id="headerLabel" alignment="CENTER" layoutX="280.0" layoutY="128.0" prefHeight="50.0" prefWidth="400.0" text="Welcome to Footy" textAlignment="CENTER">
+            <Label fx:id="headerLabel" alignment="CENTER" layoutX="280.0" layoutY="71.0" prefHeight="50.0" prefWidth="400.0" text="Welcome to Footy" textAlignment="CENTER">
                <font>
                   <Font name="Gill Sans MT" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="descriptionLabel1" alignment="CENTER" layoutX="280.0" layoutY="342.0" prefHeight="97.0" prefWidth="400.0" text="Azura, building the next professional tool to answer your goals" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Label>
          </children>
