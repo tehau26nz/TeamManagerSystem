@@ -52,7 +52,7 @@ public class PlayersController  implements Initializable {
 		//Team ComboBox
 		teamnames.addAll(new DataHelper().getTeamnames());
 		cbbTeams.setItems(teamnames);
-		cbbTeams.getSelectionModel().selectFirst();
+		cbbTeams.getSelectionModel().select(2);
 		handleSection();
 		
 		//Player TableViews
