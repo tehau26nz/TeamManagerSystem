@@ -100,4 +100,13 @@ public class SceneController {
 		stage.setScene(scene);
 		stage.show();
 	}
+	
+	public void handleImageViewAction(Event e) throws IOException {
+		Parent root;
+	    root = FXMLLoader.load(getClass().getResource("/layouts/LoginSelection.fxml"));
+		Stage stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Scene scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
 }

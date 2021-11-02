@@ -38,7 +38,7 @@
                   </Label>
                </children>
             </HBox>
-            <VBox prefHeight="640.0" prefWidth="277.0" spacing="40.0">
+            <VBox layoutY="77.0" prefHeight="563.0" prefWidth="277.0" spacing="40.0">
                <children>
                   <Button fx:id="btnPlayers" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="Manage Players">
                      <font>
@@ -67,29 +67,29 @@
                   </Button>
                </children>
                <padding>
-                  <Insets bottom="20.0" left="20.0" top="100.0" />
+                  <Insets bottom="20.0" left="20.0" top="50.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="265.0" layoutY="77.0" prefHeight="563.0" prefWidth="695.0">
+               <children>
+                  <Label text="Higlights">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="348.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../highlights.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" top="30.0" />
                </padding>
             </VBox>
          </children></Pane>
-      <VBox layoutX="272.0" layoutY="70.0" prefHeight="569.0" prefWidth="688.0">
-         <children>
-            <Label text="Higlights">
-               <font>
-                  <Font name="Gill Sans MT Bold" size="20.0" />
-               </font>
-               <padding>
-                  <Insets bottom="20.0" />
-               </padding>
-            </Label>
-            <ImageView fitHeight="348.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../highlights.png" />
-               </image>
-            </ImageView>
-         </children>
-         <padding>
-            <Insets left="100.0" top="30.0" />
-         </padding>
-      </VBox>
    </children>
 </AnchorPane>
