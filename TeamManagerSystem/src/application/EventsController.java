@@ -58,23 +58,26 @@ public class EventsController implements Initializable {
 		eventDateCol.setCellValueFactory(new PropertyValueFactory<TeamEvent, String>("eventDate"));
 
 		tableView.setItems(events);
-		events.add(new TeamEvent("Man Utd vs Man City", "Manchester", "2021-11-07"));
-		events.add(new TeamEvent("Chelsea vs Spurs", "London", "2021-11-08"));
-		events.add(new TeamEvent("Liverpool vs Arsenal", "Liverpool", "2021-11-21"));
+		addEvent();
+		setButtonsVisibility(LoginSelectionController.managerAccessLevel);
 		
-		//League manager only allows to view teams
-		if(LoginSelectionController.managerAccessLevel.equals("teamManager")) {
-			btnAddEvent.setVisible(false);
-			btnDeleteEvent.setVisible(false);
-			addEventName.setVisible(false);
-			addEventLocation.setVisible(false);
-			addEventDate.setVisible(false);
-		}else {
-			btnAddEvent.setVisible(true);
-			btnDeleteEvent.setVisible(true);
-			addEventName.setVisible(true);
-			addEventLocation.setVisible(true);
-			addEventDate.setVisible(true);
+	}
+	
+	// League manager only allows to view teams
+	public void setButtonsVisibility(String managerType) {
+		switch(managerType) {
+			case("teamManager"):
+				btnAddEvent.setVisible(false);
+				btnDeleteEvent.setVisible(false);
+				addEventName.setVisible(false);
+				addEventLocation.setVisible(false);
+				addEventDate.setVisible(false);
+			case("leagueManager"):
+				btnAddEvent.setVisible(true);
+				btnDeleteEvent.setVisible(true);
+				addEventName.setVisible(true);
+				addEventLocation.setVisible(true);
+				addEventDate.setVisible(true);
 		}
 	}
 
@@ -90,6 +93,20 @@ public class EventsController implements Initializable {
 		addEventName.clear();
 		addEventLocation.clear();
 		addEventDate.clear();
+	}
+
+	public TeamEvent createTeamEvent(String name, String location, String date) {
+		return new TeamEvent(name, location, date);
+	}
+
+	public void createTeamEventAndAdd(String name, String location, String date) {
+		events.add(new TeamEvent(name, location, date));
+	}
+	
+	public void addEvent() {
+		createTeamEventAndAdd("Man Utd vs Man City", "Manchester", "2021-11-07");
+		createTeamEventAndAdd("Chelsea vs Spurs", "London", "2021-11-08");
+		createTeamEventAndAdd("Liverpool vs Arsenal", "Liverpool", "2021-11-21");
 	}
 
 	/**
@@ -110,9 +127,9 @@ public class EventsController implements Initializable {
 	@FXML
 	public void switchToPrevious(Event e) throws IOException {
 		Parent root;
-		if(LoginSelectionController.managerAccessLevel.equals("teamManager")) {
-			 root = FXMLLoader.load(getClass().getResource("/layouts/TeamManagerDashboard.fxml"));
-		}else {
+		if (LoginSelectionController.managerAccessLevel.equals("teamManager")) {
+			root = FXMLLoader.load(getClass().getResource("/layouts/TeamManagerDashboard.fxml"));
+		} else {
 			root = FXMLLoader.load(getClass().getResource("/layouts/Dashboard.fxml"));
 		}
 		stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
@@ -120,4 +137,18 @@ public class EventsController implements Initializable {
 		stage.setScene(scene);
 		stage.show();
 	}
+
+	public TeamEvent getEventByLocation(String location) {
+		for (int i = 0; i < events.size(); i++) {
+			if (events.get(i).getEventLocation().equals(location)) {
+				return events.get(i);
+			}
+		}
+		return null;
+	}
+
+	public ObservableList<TeamEvent> getEvents() {
+		return events;
+	}
+
 }

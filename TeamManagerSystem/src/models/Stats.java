@@ -36,7 +36,7 @@ public class Stats {
 	public Integer getLost() {
 		return lost;
 	}
-	public void setLoss(Integer lost) {
+	public void setLost(Integer lost) {
 		this.lost = lost;
 	}
 	public Integer getPoints() {
