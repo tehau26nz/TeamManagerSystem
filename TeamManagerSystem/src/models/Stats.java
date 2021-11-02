@@ -5,14 +5,14 @@ import javafx.beans.property.SimpleStringProperty;
 public class Stats {
 	private Integer rank;
 	private SimpleStringProperty club;
-	private Integer win, draw,loss,points;
+	private Integer win, draw,lost,points;
 	
-	public Stats(int rank, String club,int win,int draw,int loss,int points) {
+	public Stats(int rank, String club,int win,int draw,int lost,int points) {
 		this.rank =rank;
 		this.club =new SimpleStringProperty(club);
 		this.draw =draw;
 		this.win =win;
-		this.loss =loss;
+		this.lost =lost;
 		this.points =points;
 	}
 	public Integer getRank() {
@@ -33,11 +33,11 @@ public class Stats {
 	public void setDraw(Integer draw) {
 		this.draw = draw;
 	}
-	public Integer getLoss() {
-		return loss;
+	public Integer getLost() {
+		return lost;
 	}
-	public void setLoss(Integer loss) {
-		this.loss = loss;
+	public void setLoss(Integer lost) {
+		this.lost = lost;
 	}
 	public Integer getPoints() {
 		return points;

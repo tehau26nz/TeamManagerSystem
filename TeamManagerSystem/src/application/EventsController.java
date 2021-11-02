@@ -58,9 +58,9 @@ public class EventsController implements Initializable {
 		eventDateCol.setCellValueFactory(new PropertyValueFactory<TeamEvent, String>("eventDate"));
 
 		tableView.setItems(events);
-		events.add(new TeamEvent("Pheonix vs Tiger", "Wellington", "2021-11-09"));
-		events.add(new TeamEvent("Pheonix vs Tiger", "Wellington", "2021-11-21"));
-		events.add(new TeamEvent("Pheonix vs Tiger", "Wellington", "2021-12-09"));
+		events.add(new TeamEvent("Man Utd vs Man City", "Manchester", "2021-11-07"));
+		events.add(new TeamEvent("Chelsea vs Spurs", "London", "2021-11-08"));
+		events.add(new TeamEvent("Liverpool vs Arsenal", "Liverpool", "2021-11-21"));
 		
 		//League manager only allows to view teams
 		if(LoginSelectionController.managerAccessLevel.equals("teamManager")) {

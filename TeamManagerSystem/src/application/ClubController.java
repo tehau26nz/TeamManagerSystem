@@ -47,17 +47,17 @@ public class ClubController implements Initializable {
 		clubCol.setCellValueFactory(new PropertyValueFactory<Stats,String>("club"));
 		wCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("win"));
 		dCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("draw"));
-		lCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("loss"));
+		lCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("lost"));
 		pointsCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("points"));
 	
 		tableStats.setItems(clubStats);
-		clubStats.add(new Stats(1,"Mel FC",15,4,7,49));
-		clubStats.add(new Stats(2,"Sydney FC",13,8,5,47));
-		clubStats.add(new Stats(3,"Central Coast",12,6,8,42));
-		clubStats.add(new Stats(4,"Brisbane FC",11,7,8,40));
-		clubStats.add(new Stats(5,"Adelaide",11,6,9,39));
-		clubStats.add(new Stats(6,"Macarthur FC",11,6,9,39));
-		clubStats.add(new Stats(7,"Pheonix",10,8,8,38));
+		clubStats.add(new Stats(1,"Chelsea",8,1,1,25));
+		clubStats.add(new Stats(2,"Liverpool",6,4,0,22));
+		clubStats.add(new Stats(3,"Manchester City",6,2,2,20));
+		clubStats.add(new Stats(4,"Manchester United",5,2,3,17));
+		clubStats.add(new Stats(5,"Arsenal",5,2,3,17));
+		clubStats.add(new Stats(6,"Macarthur FC",5,0,5,15));
+		clubStats.add(new Stats(7,"Crystal Palace",2,6,2,12));
 	}
 	
 	@FXML public void handleImageViewAction(Event e) throws IOException {
