@@ -31,7 +31,7 @@
                   <Font name="Gill Sans MT" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="descriptionLabel1" alignment="CENTER" layoutX="280.0" layoutY="342.0" prefHeight="97.0" prefWidth="400.0" text="Azura, building the next professional tool to answer your goals" textAlignment="CENTER" wrapText="true">
+            <Label fx:id="subDescriptionLabel" alignment="CENTER" layoutX="280.0" layoutY="342.0" prefHeight="97.0" prefWidth="400.0" text="Azura, building the next professional tool to answer your goals." textAlignment="CENTER" wrapText="true">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
