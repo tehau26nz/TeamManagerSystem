@@ -32,7 +32,7 @@
       </Pane>
    </top>
    <center>
-      <TableView fx:id="playerTableView" onMouseClicked="#handleButtonAction" prefHeight="354.0" prefWidth="716.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="playerTableView" prefHeight="354.0" prefWidth="716.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="playerNameCol" prefWidth="159.0" text="Player Name" />
           <TableColumn fx:id="playerBirthplaceCol" minWidth="0.0" prefWidth="222.0" text="Player Birthplace" />

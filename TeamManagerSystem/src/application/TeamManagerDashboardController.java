@@ -24,8 +24,7 @@ public class TeamManagerDashboardController implements Initializable{
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 	
 	@FXML public void handleImageViewAction(Event e) throws IOException {
