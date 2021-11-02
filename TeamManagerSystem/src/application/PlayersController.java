@@ -67,7 +67,11 @@ public class PlayersController  implements Initializable {
 		}
 	}
 	
-	@FXML public void handleButtonAction(Event e) {
+	@FXML public void deleteRowFromTableViewAction(Event e3) {
+		playerTableView.getItems().removeAll(playerTableView.getSelectionModel().getSelectedItems());
+	}
+	
+	@FXML public void handleButtonAction(Event e1) {
 		players.add(new Player(addPlayerName.getText(), Integer.parseInt(addPlayerHeight.getText()),addPlayerBirthplace.getText(),addPlayerAllPositions.getText()));
 			
 		addPlayerName.clear();
@@ -89,7 +93,4 @@ public class PlayersController  implements Initializable {
 		stage.show();
 	}
 	
-	@FXML public void deleteRowFromTableViewAction(Event e) {
-		playerTableView.getItems().removeAll(playerTableView.getSelectionModel().getSelectedItems());
-	}
 }

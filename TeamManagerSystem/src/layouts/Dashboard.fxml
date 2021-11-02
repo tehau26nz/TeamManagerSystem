@@ -44,10 +44,22 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                       </rowConstraints>
                        <children>
-                          <Button id="btnEvents" fx:id="btnEvents" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="133.0" prefWidth="234.0" text="Events" />
-                          <Button id="btnStatistics" fx:id="btnStatistics" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="140.0" prefWidth="232.0" text="Statistics" GridPane.columnIndex="1" />
-                          <Button id="btnPlayers" fx:id="btnPlayers" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="128.0" prefWidth="237.0" text="Players" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                          <Button id="btnTeams" fx:id="btnteams" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="130.0" prefWidth="233.0" text="Teams" GridPane.rowIndex="1" />
+                          <Button id="btnEvents" fx:id="btnEvents" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="133.0" prefWidth="234.0" text="Manage Events" textFill="#160be5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                          <Button id="btnStatistics" fx:id="btnStatistics" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="140.0" prefWidth="232.0" text="View Statistics" textFill="#150be4" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                          <Button id="btnPlayers" fx:id="btnPlayers" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="128.0" prefWidth="237.0" text="View Players" textFill="#4808eb" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                          <Button id="btnTeams" fx:id="btnteams" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#handleDashboardButtonAction" prefHeight="130.0" prefWidth="233.0" text="Manage Teams" textFill="#2b09ee" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
                         <ImageView fx:id="imvdashboardEvent" fitHeight="89.0" fitWidth="233.0" onMouseClicked="#handleDashboardImageViewAction" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <image>
                               <Image url="@../dashboard_event.png" />
@@ -58,7 +70,7 @@
                               <Image url="@../dashboard_statistics.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="imvdashboardteams" fitHeight="89.0" fitWidth="233.0" onMouseClicked="#handleDashboardImageViewAction" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <ImageView fx:id="imvdashboardteams" fitHeight="83.0" fitWidth="89.0" onMouseClicked="#handleDashboardImageViewAction" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <image>
                               <Image url="@../dashboard_players.png" />
                            </image>

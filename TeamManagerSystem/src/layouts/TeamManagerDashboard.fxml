@@ -38,7 +38,11 @@
                   </Label>
                </children>
             </HBox>
+<<<<<<< HEAD
             <VBox layoutY="77.0" prefHeight="563.0" prefWidth="277.0" spacing="40.0">
+=======
+            <VBox layoutY="78.0" prefHeight="562.0" prefWidth="277.0" spacing="40.0">
+>>>>>>> branch 'master' of git@github.com:tehau26nz/TeamManagerSystem.git
                <children>
                   <Button fx:id="btnPlayers" mnemonicParsing="false" onMouseClicked="#handleTeamManagerDashboardButtonAction" prefHeight="50.0" prefWidth="200.0" text="Manage Players">
                      <font>

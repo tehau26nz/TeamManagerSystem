@@ -42,7 +42,13 @@
             </HBox>
          </children>
       </Pane>
+<<<<<<< HEAD
       <TableView fx:id="playerTableView" layoutX="37.0" layoutY="208.0" onMouseClicked="#handleButtonAction" prefHeight="376.0" prefWidth="887.0">
+=======
+   </top>
+   <center>
+      <TableView fx:id="playerTableView" prefHeight="354.0" prefWidth="716.0" BorderPane.alignment="CENTER">
+>>>>>>> branch 'master' of git@github.com:tehau26nz/TeamManagerSystem.git
         <columns>
           <TableColumn fx:id="playerNameCol" prefWidth="241.99997329711914" text="Player Name" />
           <TableColumn fx:id="playerBirthplaceCol" minWidth="0.0" prefWidth="228.66665649414062" text="Player Birthplace" />
