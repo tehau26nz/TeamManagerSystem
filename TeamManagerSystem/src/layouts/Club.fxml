@@ -15,11 +15,11 @@
 
 <AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClubController">
    <children>
-      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;">
+      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #ffe380;">
          <children>
             <HBox layoutY="108.0" prefHeight="42.0" prefWidth="960.0">
                <children>
-                  <Text fill="#0071fc" strokeType="OUTSIDE" strokeWidth="0.0" text="Manchester City">
+                  <Text fill="#000000" strokeType="OUTSIDE" strokeWidth="0.0" text="Manchester City">
                      <font>
                         <Font name="Gill Sans MT Bold" size="16.0" />
                      </font>
@@ -27,7 +27,7 @@
                         <Insets left="90.0" />
                      </HBox.margin>
                   </Text>
-                  <Text fill="#0782ee" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Scorer">
+                  <Text fill="#000000" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Scorer">
                      <font>
                         <Font name="Gill Sans MT Bold" size="16.0" />
                      </font>
@@ -35,7 +35,7 @@
                         <Insets left="110.0" />
                      </HBox.margin>
                   </Text>
-                  <Text fill="#0369f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Defender">
+                  <Text fill="#000000" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Defender">
                      <font>
                         <Font name="Gill Sans MT Bold" size="16.0" />
                      </font>
@@ -43,7 +43,7 @@
                         <Insets left="110.0" />
                      </HBox.margin>
                   </Text>
-                  <Text fill="#0771eb" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Assists">
+                  <Text fill="#000000" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Assists">
                      <font>
                         <Font name="Gill Sans MT Bold" size="16.0" />
                      </font>

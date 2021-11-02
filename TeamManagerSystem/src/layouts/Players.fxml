@@ -16,7 +16,7 @@
 
 <AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayersController">
    <children>
-      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;">
+      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #80acff;">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
                <children>

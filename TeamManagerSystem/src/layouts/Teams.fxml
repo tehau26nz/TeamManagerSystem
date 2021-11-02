@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeamsController">
    <children>
-      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #039BE5;" />
+      <Pane prefHeight="70.0" prefWidth="960.0" style="-fx-background-color: #809dff;" />
       <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="960.0">
          <children>
             <ImageView fx:id="previousBtn" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#switchToPrevious">
