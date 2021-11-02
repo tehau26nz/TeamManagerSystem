@@ -24,12 +24,12 @@ public class Player {
 		this.setAllPositions();
 	}
 	
-	public Player(String name, Integer height, String birthplace, String allpositions) {
+	public Player(String name, int height, String birthplace, String allpositions) {
 		super();
 		this.name = name;
 		this.height = height;
 		this.birthplace = birthplace;
-		this.allPositions =allpositions;
+		this.allPositions = allpositions;
 	}
 
 	// Method to get player name
@@ -77,4 +77,5 @@ public class Player {
 	public void setAllPositions() {
 		this.allPositions =  String.join(",", playerPositions);
 	}
+
 }

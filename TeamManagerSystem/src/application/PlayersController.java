@@ -80,17 +80,25 @@ public class PlayersController  implements Initializable {
 		}
 	}
 	
-	@FXML public void deleteRowFromTableViewAction(Event e3) {
+	@FXML public void deleteRowFromTableViewAction(Event e) {
 		playerTableView.getItems().removeAll(playerTableView.getSelectionModel().getSelectedItems());
 	}
 	
-	@FXML public void handleButtonAction(Event e1) {
-		players.add(new Player(addPlayerName.getText(), Integer.parseInt(addPlayerHeight.getText()),addPlayerBirthplace.getText(),addPlayerAllPositions.getText()));
-			
+	@FXML public void handleButtonAction(Event e) {
+//		players.add(new Player(addPlayerName.getText(), Integer.parseInt(addPlayerHeight.getText()),addPlayerBirthplace.getText(),addPlayerAllPositions.getText()));
+		addNewPlayer(addPlayerName.getText(), Integer.parseInt(addPlayerHeight.getText()),addPlayerBirthplace.getText(),addPlayerAllPositions.getText());	
 		addPlayerName.clear();
 		addPlayerBirthplace.clear();
 		addPlayerHeight.clear();
 		addPlayerAllPositions.clear();
+	}
+	
+	public Player createNewPlayer(String name,int height, String birthplace, String allpositions) {
+		return new Player(name, height, birthplace, allpositions);
+	}
+	
+	public void addNewPlayer(String name,int height, String birthplace, String allpositions) {
+		players.add(createNewPlayer(name, height, birthplace, allpositions));
 	}
 	
 	public void handleSection() {
