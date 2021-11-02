@@ -47,10 +47,10 @@
                <children>
                   <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="66.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Wellington_Phoenix_FC_logo.png" />
+                        <Image url="@../mancity.png" />
                      </image>
                   </ImageView>
-                  <Text fill="#0071fc" layoutX="91.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phoenix FC">
+                  <Text fill="#0071fc" layoutX="56.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manchester City">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -59,12 +59,12 @@
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Tomer_Hemed_Top_Scorer.png" />
+                        <Image url="@../Kevin%20De%20Bruyne.png" />
                      </image>
                   </ImageView>
-                  <Text fill="#0782ee" layoutX="83.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Scorer">
+                  <Text fill="#0782ee" layoutX="83.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Scorer">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -81,12 +81,12 @@
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../20_Oliver_Sail_Best_Defender.png" />
+                        <Image url="@../Kyle%20Walker.png" />
                      </image>
                   </ImageView>
-                  <Text fill="#0369f8" layoutX="77.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Defender">
+                  <Text fill="#0369f8" layoutX="66.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Defender">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -95,12 +95,12 @@
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="65.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../10_Ulises_Dávila_Top_Assists.png" />
+                        <Image url="@../Bernardo%20Silva.png" />
                      </image>
                   </ImageView>
-                  <Text fill="#0771eb" layoutX="81.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Assists">
+                  <Text fill="#0771eb" layoutX="81.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Assists">
                      <font>
                         <Font size="24.0" />
                      </font>
