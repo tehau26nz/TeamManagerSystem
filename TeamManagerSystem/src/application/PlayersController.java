@@ -50,13 +50,13 @@ public class PlayersController  implements Initializable {
 		playerAllPositionsCol.setCellValueFactory(new PropertyValueFactory<Player,String>("allPositions"));
 		
 		//Team ComboBox
-		teamnames.addAll(new DataHelper().getTeamnames());
+		teamnames.addAll(new DataHelper("teams.txt").getTeamnames());
 		cbbTeams.setItems(teamnames);
 		cbbTeams.getSelectionModel().select(2);
 		handleSection();
 		
 		//Player TableViews
-		Team team = new DataHelper().getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());
+		Team team = new DataHelper("teams.txt").getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());
 		players.addAll(team.getTeamPlayers());
 		playerTableView.setItems(players);
 		
@@ -103,7 +103,7 @@ public class PlayersController  implements Initializable {
 	
 	public void handleSection() {
 		cbbTeams.setOnAction(event ->{
-			Team team = new DataHelper().getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());
+			Team team = new DataHelper("teams.txt").getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());
 			players.clear();
 			players.addAll(team.getTeamPlayers());
 		});

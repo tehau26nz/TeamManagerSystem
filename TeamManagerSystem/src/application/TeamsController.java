@@ -45,7 +45,7 @@ public class TeamsController implements Initializable {
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		teamNameCol.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
 		teamCoachCol.setCellValueFactory(new PropertyValueFactory<Team,String>("coachName"));
-		getTeams(new DataHelper().getTeams());
+		getTeams(new DataHelper("teams.txt").getTeams());
 		teamTableView.setItems(footyTeams);
 		
 		//Team manager only allows to view teams

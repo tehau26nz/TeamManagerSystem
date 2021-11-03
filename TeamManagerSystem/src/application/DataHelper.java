@@ -23,26 +23,27 @@ import models.Team;
  * @since 2021-11-01
  */
 public class DataHelper {
-	private List<Team> teams = new ArrayList<Team>();
-	private List<String> teamnames = new ArrayList<String>();
+	private ArrayList<Team> teams = new ArrayList<Team>();
+	private ArrayList<String> teamnames = new ArrayList<String>();
 	
-	public DataHelper() {
-		setTeams();
+	public DataHelper(String fileName) {
+		setTeams(fileName);
 		setTeamnames();
 	}
 
-	public List<Team> getTeams() {
+	public ArrayList<Team> getTeams() {
+		System.out.println(teams.size());
 		return teams;
 	}
 
 	/*load teams from  the teams.txt file*/
-	public void setTeams() {
-		this.loadFile();
+	public void setTeams(String fileName) {
+		this.loadFile(fileName);
 	}
 	
-	public void loadFile() {
+	public void loadFile(String filename) {
 		try {
-			Scanner scan = new Scanner(new File("teams.txt"));
+			Scanner scan = new Scanner(new File(filename));
 			while (scan.hasNext()) {
 				String teamName = scan.nextLine().trim();
 				String coachName = scan.nextLine().trim();
@@ -72,7 +73,7 @@ public class DataHelper {
 		}
 	}
 
-	public List<String> getTeamnames() {
+	public ArrayList<String> getTeamnames() {
 		return teamnames;
 	}
 
@@ -91,4 +92,10 @@ public class DataHelper {
 		return null;
 	}
 
+	public DataHelper(ArrayList<Team> teams, ArrayList<String> teamnames) {
+		super();
+		this.teams = teams;
+		this.teamnames = teamnames;
+	}
+	
 }

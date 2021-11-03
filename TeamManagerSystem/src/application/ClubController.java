@@ -2,6 +2,7 @@ package application;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
@@ -20,6 +21,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import models.PieChartEntry;
 import models.Stats;
 
 public class ClubController implements Initializable {
@@ -33,6 +35,7 @@ public class ClubController implements Initializable {
 	@FXML private TableColumn<Stats, Integer> pointsCol;
 	private ObservableList<Stats> clubStats = FXCollections.observableArrayList();
 	private ObservableList<PieChart.Data> pieChartData;
+	private ArrayList<PieChartEntry> entryData = new ArrayList<>();
 	@FXML private ImageView ivClubPrevious;
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -66,25 +69,26 @@ public class ClubController implements Initializable {
 	
 	//Create data for the pie chart
 	public void setUpPieChart() {
-		HashMap<String, Integer> data = new HashMap<>();
-		data.put("Won 60%", 60);
-		data.put("Drawn 20%", 20);
-		data.put("Lost 20%", 20);
+		ArrayList<PieChartEntry> data = new ArrayList<>();
+		data.add(new PieChartEntry("Won 60%", 60.0));
+		data.add(new PieChartEntry("Drawn 20%", 20.0));
+		data.add(new PieChartEntry("Lost 20%", 20.0));
+		
 		pieChartData = setUpDataForPieChart(data);
 		pieChart.setData(pieChartData);
 		pieChart.autosize();
 	}
 	
-	public ObservableList<PieChart.Data> setUpDataForPieChart(HashMap<String, Integer> data) {
+	public ObservableList<PieChart.Data> setUpDataForPieChart(ArrayList<PieChartEntry> entries) {
 		pieChartData = FXCollections.observableArrayList();
 		
-		for(Map.Entry<String, Integer> entry: data.entrySet()) {
+		for(PieChartEntry entry:entries) {
 			pieChartData.add(new PieChart.Data(entry.getKey(), entry.getValue()));
 		}
 		
 		return pieChartData;
 	}
-	
+		
 	public void setUpRankTableView() {
 		rankCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("rank"));
 		clubCol.setCellValueFactory(new PropertyValueFactory<Stats,String>("club"));
@@ -111,4 +115,21 @@ public class ClubController implements Initializable {
 		stage.show();
 		
 	}
+
+	public ObservableList<PieChart.Data> getPieChartData() {
+		return pieChartData;
+	}
+
+	public void setPieChartData(ObservableList<PieChart.Data> pieChartData) {
+		this.pieChartData = pieChartData;
+	}
+
+	public ArrayList<PieChartEntry> getEntryData() {
+		return entryData;
+	}
+
+	public void setEntryData(ArrayList<PieChartEntry> entryData) {
+		this.entryData = entryData;
+	}
+	
 }
