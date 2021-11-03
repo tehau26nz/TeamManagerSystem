@@ -1,4 +1,5 @@
-package models;
+package utils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,56 +10,13 @@ import person.Sponsor;
 import person.TeamManager;
 
 public class Team {
-	// Field
-	private ArrayList<Player> teamPlayers = new ArrayList<>();
-	private String teamName;
-	private String coachName;
-	
+
 	private Owner owner;
 	private TeamManager manager;
-	private List<Footballer> footballers = new ArrayList<>();
+	private List<Footballer>footballers = new ArrayList<>();
 	private List<Coach>coaches = new ArrayList<>();
 	private List<Sponsor>sponsors = new ArrayList<>();
 	private boolean isValidLineUp;
-
-	// Constructor
-	public Team(String teamName, String coachName) {
-		this.teamName = teamName;
-		this.coachName = coachName;
-	}
-
-	// Accessor
-	public ArrayList<Player> getTeamPlayers() {
-		return new ArrayList<Player>(teamPlayers);
-	}
-
-	//Set team players
-	public void setTeamPlayers(ArrayList<Player> teamPlayers) {
-		this.teamPlayers = teamPlayers;
-	}
-
-
-	public String getTeamName() {
-		return teamName;
-	}
-
-	public void setTeamName(String teamName) {
-		this.teamName = teamName;
-	}
-	
-
-	public String getCoachName() {
-		return coachName;
-	}
-
-	public void setCoachName(String coachName) {
-		this.coachName = coachName;
-	}
-
-	// Method
-	public void addPlayer(Player p) {
-		teamPlayers.add(p);
-	}
 	
 	public Team(Owner owner) {
 		this.owner = owner;
@@ -88,11 +46,11 @@ public class Team {
 		this.manager = manager;
 	}
 
-	public List<Footballer> getFootballer() {
+	public List<Footballer> getPlayers() {
 		return footballers;
 	}
 
-	public void setFootballers(List<Footballer> footballers) {
+	public void setPlayers(List<Footballer> footballers) {
 		this.footballers = footballers;
 	}
 
