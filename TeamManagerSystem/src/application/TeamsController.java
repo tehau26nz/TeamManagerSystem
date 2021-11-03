@@ -45,13 +45,7 @@ public class TeamsController implements Initializable {
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		teamNameCol.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
 		teamCoachCol.setCellValueFactory(new PropertyValueFactory<Team,String>("coachName"));
-		//footyTeams.add(new FootyTeam("Pheonix","Selina Yu"));
-		
-		List<Team> teams = new DataHelper().getTeams();
-		for (Team t : teams) {
-			footyTeams.add(new Team(t.getTeamName(), t.getCoachName()));
-		}
-		
+		getTeams(new DataHelper().getTeams());
 		teamTableView.setItems(footyTeams);
 		
 		//Team manager only allows to view teams
@@ -67,6 +61,15 @@ public class TeamsController implements Initializable {
 			addTeamCoach.setVisible(true);
 		}
 	}
+	
+	public void getTeams(List<Team> teams) {
+		
+		for (Team t : teams) {
+			footyTeams.add(new Team(t.getTeamName(), t.getCoachName()));
+		}
+		
+	}
+	
 	@FXML
 	public void switchToPrevious(Event e) throws IOException {
 		Parent root;
@@ -89,6 +92,13 @@ public class TeamsController implements Initializable {
 	}
 	
 	@FXML public void deleteRowFromTableViewAction(Event e) {
-		teamTableView.getItems().removeAll(teamTableView.getSelectionModel().getSelectedItems());
+		Team t = teamTableView.getSelectionModel().getSelectedItems().get(0);
+		footyTeams.remove(t);
+//		teamTableView.getItems().removeAll(teamTableView.getSelectionModel().getSelectedItems());
 	}
+
+	public ObservableList<Team> getFootyTeams() {
+		return footyTeams;
+	}
+	
 }

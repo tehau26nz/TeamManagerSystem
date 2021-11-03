@@ -1,5 +1,7 @@
 package testing;
 
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.params.provider.Arguments;
@@ -13,11 +15,13 @@ public class ClubControllerTestDataProvider {
 		);
 	}
 	
-//	public static Collection createClubStatsDataProvider() {
-//		return Arrays.asList(new Object[][] {
-//			{9,"West Ham United",6,2,2,20}
-//			{10,"Newcastle United",0,4,6,4}
-//		);
-//	}
+	public static Collection createClubStatsDataProvider() {
+		return Arrays.asList(new Object[][] {
+			{9,"West Ham United",6,2,2,20},
+			{10,"Newcastle United",0,4,6,4}
+			}
+		);
+	}
+	
 
 }

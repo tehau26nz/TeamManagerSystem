@@ -2,6 +2,8 @@ package application;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -37,6 +39,7 @@ public class ClubController implements Initializable {
 		
 		setUpRankTableView();
 		setUpPieChart();
+		
 		tableStats.setItems(clubStats);
 		addStats();
 
@@ -61,15 +64,25 @@ public class ClubController implements Initializable {
 		
 	}
 	
+	//Create data for the pie chart
 	public void setUpPieChart() {
-		ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
-				new PieChart.Data("Won 60%", 60),
-				new PieChart.Data("Drawn 20%", 20),
-				new PieChart.Data("Lost 20%", 20)
-				);
-				
-				pieChart.setData(pieChartData);
-				pieChart.autosize();
+		HashMap<String, Integer> data = new HashMap<>();
+		data.put("Won 60%", 60);
+		data.put("Drawn 20%", 20);
+		data.put("Lost 20%", 20);
+		pieChartData = setUpDataForPieChart(data);
+		pieChart.setData(pieChartData);
+		pieChart.autosize();
+	}
+	
+	public ObservableList<PieChart.Data> setUpDataForPieChart(HashMap<String, Integer> data) {
+		pieChartData = FXCollections.observableArrayList();
+		
+		for(Map.Entry<String, Integer> entry: data.entrySet()) {
+			pieChartData.add(new PieChart.Data(entry.getKey(), entry.getValue()));
+		}
+		
+		return pieChartData;
 	}
 	
 	public void setUpRankTableView() {
