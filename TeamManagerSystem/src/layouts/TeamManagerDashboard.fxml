@@ -68,7 +68,7 @@
 	         </children></Pane>
 	      <VBox layoutX="272.0" layoutY="70.0" prefHeight="569.0" prefWidth="688.0">
 	         <children>
-	            <Label text="Higlights">
+	            <Label text="Highlights">
 	               <font>
 	                  <Font name="Gill Sans MT Bold" size="20.0" />
 	               </font>
@@ -78,7 +78,7 @@
 	            </Label>
 	            <ImageView fitHeight="348.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
 	               <image>
-	                  <Image url="@../highlights.png" />
+	                  <Image url="@../photoClip.png" />
 	               </image>
 	            </ImageView>
 	         </children>
