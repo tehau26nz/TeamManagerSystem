@@ -1,5 +1,6 @@
 package application;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -45,7 +46,7 @@ public class TeamsController implements Initializable {
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		teamNameCol.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
 		teamCoachCol.setCellValueFactory(new PropertyValueFactory<Team,String>("coachName"));
-		
+		loadTeamByDataHelper("teams.txt");
 		teamTableView.setItems(footyTeams);
 		
 		//Team manager only allows to view teams
@@ -84,8 +85,8 @@ public class TeamsController implements Initializable {
 		stage.show();
 	}
 	
-	public void loadTeamByDataHelper(String Filename) {
-		getTeams(new DataHelper(new File()).getTeams());
+	public void loadTeamByDataHelper(String filename) {
+		getTeams(new DataHelper(filename).getTeams());
 	}
 	
 	public void addNewTeam(String teamName,String coachName) {
