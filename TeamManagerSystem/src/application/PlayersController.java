@@ -29,7 +29,6 @@ public class PlayersController  implements Initializable {
 	@FXML private TableColumn<Player,String> playerBirthplaceCol;
 	@FXML private TableColumn<Player,Integer> playerHeightCol;
 	@FXML private TableColumn<Player,String> playerAllPositionsCol;
-	
 	@FXML private TextField addPlayerName;
 	@FXML private TextField addPlayerBirthplace;
 	@FXML private TextField addPlayerHeight;
@@ -120,6 +119,14 @@ public class PlayersController  implements Initializable {
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+	}
+
+	public ObservableList<Player> getPlayers() {
+		return players;
+	}
+
+	public void setPlayers(ObservableList<Player> players) {
+		this.players = players;
 	}
 	
 }
