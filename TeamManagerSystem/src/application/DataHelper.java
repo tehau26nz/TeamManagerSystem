@@ -32,7 +32,6 @@ public class DataHelper {
 	}
 
 	public ArrayList<Team> getTeams() {
-		System.out.println(teams.size());
 		return teams;
 	}
 
