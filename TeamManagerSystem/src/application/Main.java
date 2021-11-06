@@ -7,7 +7,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 
-
+/**
+ *  It is the entry point/main window for the program and extends JavaFX application.
+ */
 public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
