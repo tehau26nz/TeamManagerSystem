@@ -16,12 +16,12 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 /**
  * This controller is binded to dashboard.fxml
- * This controller reacts to user navigation selection (button/image view click) 
- * 1. user clicks on back image view, navigate to login selection view
- * 2. user clicks on manage events button/image view, redirect to events view 
- * 3. user clicks on manage team button/image view, redirect to team view 
- * 4. user clicks on view players button/image view, redirect to player view 
- * 5. user clicks on view statistics button/image view, redirect to statistic view 
+ * This controller reacts to league manager navigation selection (button/image view click) 
+ * 1. league manager clicks on back image view, navigate to login selection view
+ * 2. league manager clicks on manage events button/image view, redirect to events view 
+ * 3. league manager clicks on manage team button/image view, redirect to team view 
+ * 4. league manager clicks on view players button/image view, redirect to player view 
+ * 5. league manager clicks on view statistics button/image view, redirect to statistic view 
  * @author Selina Yu
  * @since 2021-11-01
  */
