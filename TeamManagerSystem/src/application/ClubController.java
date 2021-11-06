@@ -23,7 +23,13 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import models.PieChartEntry;
 import models.Stats;
-
+/**
+ * This controller is binded to Club.fxml.
+ * This controller reacts to show club statistics by using pie chart, table view and image view.
+ * 
+ * @author Selina Yu
+ *
+ */
 public class ClubController implements Initializable {
 	@FXML PieChart pieChart;
 	@FXML private TableView<Stats> tableStats;
@@ -56,7 +62,9 @@ public class ClubController implements Initializable {
 	public void createNewStatsAndAdd(int rank, String club,int won,int drawn,int lost,int points) {
 		clubStats.add(new Stats(rank,club,won,drawn,lost,points));
 	}
-	
+	/**
+	 * Add dummy statistic data 
+	 */
 	public void addStats() {
 		
 		createNewStatsAndAdd(1,"Chelsea",8,1,1,25);
@@ -68,7 +76,10 @@ public class ClubController implements Initializable {
 		
 	}
 	
-	//Create data for the pie chart
+	/**
+	 * Bind pie chart to dummy data
+	 * Future works - bind pie chart to data from data source such as database
+	 */
 	public void setUpPieChart() {
 		ArrayList<PieChartEntry> data = new ArrayList<>();
 		data.add(new PieChartEntry("Won 60%", 60.0));
@@ -89,7 +100,9 @@ public class ClubController implements Initializable {
 		
 		return pieChartData;
 	}
-		
+	/**
+	 * Bind table view to Statistic Model	
+	 */
 	public void setUpRankTableView() {
 		rankCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("rank"));
 		clubCol.setCellValueFactory(new PropertyValueFactory<Stats,String>("club"));
@@ -99,7 +112,11 @@ public class ClubController implements Initializable {
 		pointsCol.setCellValueFactory(new PropertyValueFactory<Stats,Integer>("points"));
 	
 	}
-	
+	/**
+	 * this methods handle back image view click event 
+	 * @param e
+	 * @throws IOException
+	 */
 	@FXML public void handleImageViewAction(Event e) throws IOException {
 		
 		Parent root;
