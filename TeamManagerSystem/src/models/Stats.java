@@ -1,12 +1,25 @@
 package models;
 
 import javafx.beans.property.SimpleStringProperty;
-
+/**
+ * This is the model of the team statistics.
+ * It holds the properties of team rank, won drawn,lost and points statistics.
+ * @author Selina Yu
+ * @since 2021-11-06
+ */
 public class Stats {
 	private Integer rank;
 	private SimpleStringProperty club;
 	private Integer won,drawn,lost,points;
-	
+	/**
+	 * Constructor - construct a new team statistic with the given rank, won, drawn,lost and points
+	 * @param rank - club rank
+	 * @param club 
+	 * @param won - won times
+	 * @param drawn - drawn times
+	 * @param lost - lost times
+	 * @param points - points in the league
+	 */
 	public Stats(int rank, String club,int won,int drawn,int lost,int points) {
 		this.rank =rank;
 		this.club = new SimpleStringProperty(club);
