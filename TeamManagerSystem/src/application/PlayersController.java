@@ -22,7 +22,14 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import models.Player;
 import models.Team;
-
+/**
+ * This controller is binded to Players.fxml
+ * * This controller reacts to show player info by using table view and combo box.
+ * 1. team manager allow to manage their club players such as adding/deleting players 
+ * 2. league manager only allow to view players but they allow to see any teams' players.
+ * @author Selina Yu
+ * @since 2021-11-01
+ */
 public class PlayersController  implements Initializable {
 	@FXML private TableView<Player> playerTableView;
 	@FXML private TableColumn<Player,String> playerNameCol;
@@ -78,11 +85,17 @@ public class PlayersController  implements Initializable {
 			cbbTeams.setVisible(false);
 		}
 	}
-	
+	/**
+	 * This method handles Delete Player Event
+	 * @param e
+	 */
 	@FXML public void deleteRowFromTableViewAction(Event e) {
 		playerTableView.getItems().removeAll(playerTableView.getSelectionModel().getSelectedItems());
 	}
-	
+	/**
+	 * This method handles Add Player Event
+	 * @param e
+	 */
 	@FXML public void handleButtonAction(Event e) {
 //		players.add(new Player(addPlayerName.getText(), Integer.parseInt(addPlayerHeight.getText()),addPlayerBirthplace.getText(),addPlayerAllPositions.getText()));
 		addNewPlayer(addPlayerName.getText(), Integer.parseInt(addPlayerHeight.getText()),addPlayerBirthplace.getText(),addPlayerAllPositions.getText());	
@@ -99,7 +112,10 @@ public class PlayersController  implements Initializable {
 	public void addNewPlayer(String name,int height, String birthplace, String allpositions) {
 		players.add(createNewPlayer(name, height, birthplace, allpositions));
 	}
-	
+	/**
+	 * This method handles team selection Event 
+	 * @param e
+	 */
 	public void handleSection() {
 		cbbTeams.setOnAction(event ->{
 			Team team = new DataHelper("teams.txt").getTeambyName(cbbTeams.getSelectionModel().getSelectedItem());

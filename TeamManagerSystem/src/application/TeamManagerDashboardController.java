@@ -14,7 +14,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-
+/**
+ * This controller is binded to TeamManagerDashboard.fxml
+ * This controller reacts to team manager navigation selection (button/image view click) 
+ * 1. team manager clicks on back image view, navigate to login selection view
+ * 2. team manager clicks on view events button, redirect to events view 
+ * 3. team manager clicks on view League team button, redirect to team view 
+ * 4. league manager clicks on Manager players button, redirect to player view 
+ * 5. league manager clicks on view Club statistics button, redirect to statistic view 
+ * @author Tehaunui Shing Soi 
+ * @since 2021-11-01
+ */
 public class TeamManagerDashboardController implements Initializable{
 	@FXML private Button btnteams;
 	@FXML private Button btnEvents;
