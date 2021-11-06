@@ -13,8 +13,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
+/**
+ * This controller is binded to LoginSelection.fxml.
+ * This controller reacts to user role selection on their access level.
+ * @author Selina Yu
+ * @since 2021-11-01
+ */
 public class LoginSelectionController implements Initializable {
+	/**
+	 * managerAccessLevel is used by other controllers to enable/disable features due to different manager roles.
+	 */
     public static String managerAccessLevel;
 	@FXML private Button teamManagerBtn;
 	@FXML private Button leagueManagerBtn;
@@ -25,7 +33,9 @@ public class LoginSelectionController implements Initializable {
 	}
 	
 	/**
-	 * Set manager access level when user selecting their access level
+	 * This methods provides below two actions - 
+	 * 1. Set manager access level when user selecting their access level
+	 * 2. redirect to manager dashboard
 	 * @param e
 	 * @throws IOException
 	 */
