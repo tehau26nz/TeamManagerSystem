@@ -22,7 +22,14 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-
+/**
+ * This controller is binded to Events.fxml.
+ * This controller reacts differently to team manager and league manager:
+ * 1. league manager can add,delete and view events;
+ * 2. team manager also allow to view events;
+ * @author Selina Yu
+ * @since 2021-11-01
+ */
 public class EventsController implements Initializable {
 
 	private Stage stage;
@@ -63,7 +70,10 @@ public class EventsController implements Initializable {
 		
 	}
 	
-	// League manager only allows to view teams
+	/**
+	 * hide all buttons and text field if the user is team manager
+	 * @param managerType
+	 */
 	public void setButtonsVisibility(String managerType) {
 		switch(managerType) {
 			case "teamManager":
@@ -84,8 +94,7 @@ public class EventsController implements Initializable {
 	}
 
 	/**
-	 * Allow users to add events
-	 * 
+	 * This method handles add event click
 	 * @param e
 	 */
 	@FXML
@@ -112,8 +121,7 @@ public class EventsController implements Initializable {
 	}
 
 	/**
-	 * Allow users to delete the selected event
-	 * 
+	 * This method handles Event Delete Event
 	 * @param e
 	 */
 	@FXML
@@ -122,7 +130,7 @@ public class EventsController implements Initializable {
 	}
 
 	/**
-	 * Allow users to delete the selected event
+	 * This method handles back action
 	 * 
 	 * @param e
 	 */
