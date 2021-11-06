@@ -24,7 +24,14 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-
+/**
+ * This controller is binded to Teams.fxml.
+ * This controller reacts differently to team manager and league manager:
+ * 1. league manager can add,delete and view teams;
+ * 2. team manager also allow to view teams;
+ * @author Selina Yu
+ * @since 2021-11-01
+ */
 public class TeamsController implements Initializable {
 	@FXML private TableView<Team> teamTableView;
 	@FXML private TableColumn<Team,String> teamNameCol;
@@ -84,7 +91,10 @@ public class TeamsController implements Initializable {
 		stage.setScene(scene);
 		stage.show();
 	}
-	
+	/**
+	 * Get all teams by using DataHelper
+	 * @param filename
+	 */
 	public void loadTeamByDataHelper(String filename) {
 		getTeams(new DataHelper(filename).getTeams());
 	}
@@ -93,13 +103,19 @@ public class TeamsController implements Initializable {
 		Team t = new Team(teamName,coachName);
 		footyTeams.add(t);
 	}
-	
+	/**
+	 * This method handles Add Team Event
+	 * @param e
+	 */
 	@FXML public void handleButtonAction(Event e) {
 		    addNewTeam(addTeamName.getText(),addTeamCoach.getText());
 		    addTeamName.clear();
 		    addTeamCoach.clear();
 	}
-	
+	/**
+	 * This method handles Delete Team Event
+	 * @param e
+	 */
 	@FXML public void deleteRowFromTableViewAction(Event e) {
 		Team t = teamTableView.getSelectionModel().getSelectedItems().get(0);
 		footyTeams.remove(t);
