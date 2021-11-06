@@ -14,7 +14,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-
+/**
+ * This controller is binded to dashboard.fxml
+ * This controller reacts to user navigation selection (button/image view click) 
+ * 1. user clicks on back image view, navigate to login selection view
+ * 2. user clicks on manage events button/image view, redirect to events view 
+ * 3. user clicks on manage team button/image view, redirect to team view 
+ * 4. user clicks on view players button/image view, redirect to player view 
+ * 5. user clicks on view statistics button/image view, redirect to statistic view 
+ * @author Selina Yu
+ * @since 2021-11-01
+ */
 public class DashboardController implements Initializable{
 	@FXML private ImageView imvDashboardPrevious;
 	@FXML private Button btnteams;
@@ -31,15 +41,25 @@ public class DashboardController implements Initializable{
 		// TODO Auto-generated method stub
 		
 	}
+	/**
+	 * this methods handle image view click event for back image view
+	 * @param e
+	 * @throws IOException
+	 */
 	@FXML public void handleImageViewAction(Event e) throws IOException {
 		Parent root;
+		//Load the view of Login selection
 	    root = FXMLLoader.load(getClass().getResource("/layouts/LoginSelection.fxml"));
 		Stage stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
 	}
-	
+	/**
+	 * this method handle button click event
+	 * @param e
+	 * @throws IOException
+	 */
 	@FXML public void handleDashboardButtonAction(Event e) throws IOException {
 		if(e.getSource() == btnEvents) {
 			loadStages("/layouts/Events.fxml",e);
@@ -51,7 +71,11 @@ public class DashboardController implements Initializable{
 			loadStages("/layouts/Players.fxml",e);
 		}
 	}
-	
+	/**
+	 * this methods handle image view click event for navigation image view
+	 * @param e
+	 * @throws IOException
+	 */
 	@FXML public void handleDashboardImageViewAction(Event e) throws IOException {
 		if(e.getSource() == imvdashboardEvent) {
 			loadStages("/layouts/Events.fxml",e);
@@ -63,7 +87,11 @@ public class DashboardController implements Initializable{
 			loadStages("/layouts/Players.fxml",e);
 		}
 	}
-	
+	/**
+	 * Load new view 
+	 * @param fxml
+	 * @param e
+	 */
 	private void loadStages(String fxml, Event e) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource(fxml));
