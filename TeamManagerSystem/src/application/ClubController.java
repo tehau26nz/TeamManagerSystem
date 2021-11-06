@@ -37,6 +37,7 @@ public class ClubController implements Initializable {
 	private ObservableList<PieChart.Data> pieChartData;
 	private ArrayList<PieChartEntry> entryData = new ArrayList<>();
 	@FXML private ImageView ivClubPrevious;
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
